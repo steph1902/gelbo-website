@@ -510,52 +510,126 @@
                 </section>
 
                 <!-- Contact Section -->
-                <section id="kontak" class="bg-primary text-white rounded-lg p-8 md:p-12">
-                    <div class="grid md:grid-cols-2 gap-8 items-center">
-                        <div class="space-y-4">
-                            <h3 class="text-5xl font-light">Hubungi Kami</h3>
-                            <p class="text-green-100 text-lg">
+                <section id="kontak" class="relative py-20 overflow-hidden">
+                    <!-- Background Elements -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary/80"></div>
+                    <div class="absolute top-0 left-0 w-full h-full">
+                        <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
+                        <div class="absolute top-32 right-20 w-40 h-40 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+                        <div class="absolute bottom-20 left-1/4 w-28 h-28 bg-white/5 rounded-full blur-xl animate-pulse delay-2000"></div>
+                    </div>
+                    
+                    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+                                <span class="material-icons text-white mr-2">contact_phone</span>
+                                <span class="text-white text-sm font-semibold">Hubungi Kami</span>
+                            </div>
+                            <h3 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                                Mari Berkolaborasi
+                                <span class="block bg-gradient-to-r from-secondary to-yellow-300 bg-clip-text text-transparent">
+                                    Bersama Kami
+                                </span>
+                            </h3>
+                            <p class="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
                                 Kami siap membantu Anda. Silakan hubungi kami melalui informasi di bawah atau 
                                 isi formulir kontak untuk pertanyaan lebih lanjut.
                             </p>
-                            
-                            <div class="space-y-4 mt-8">
-                                <div class="flex items-center space-x-3">
-                                    <span class="material-icons">phone</span>
-                                    <span>+62 21 1234 5678</span>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <span class="material-icons">email</span>
-                                    <span>info@gelbo.co.id</span>
-                                </div>
-                                <div class="flex items-center space-x-3">
-                                    <span class="material-icons">location_on</span>
-                                    <span>Jakarta, Indonesia</span>
-                                </div>
-                            </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                                <h4 class="text-xl font-semibold mb-4">Untuk Kemitraan & Distributor</h4>
-                                <p class="text-green-100 mb-4">
-                                    Tertarik untuk menjadi mitra distributor produk Gëlbö? Hubungi tim sales kami 
-                                    untuk mendapatkan penawaran terbaik dan informasi lebih lanjut mengenai peluang bisnis bersama kami.
-                                </p>
-                                <button class="btn-secondary">
-                                    Hubungi Sales
-                                </button>
+                        <div class="grid lg:grid-cols-2 gap-12 items-start">
+                            <!-- Contact Info Section -->
+                            <div class="space-y-8">
+                                <div class="group relative bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-500 hover:scale-105">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div class="relative z-10">
+                                        <h4 class="text-2xl font-bold text-white mb-6 flex items-center">
+                                            <span class="material-icons mr-3 text-secondary">business</span>
+                                            Informasi Kontak
+                                        </h4>
+                                        
+                                        <div class="space-y-6">
+                                            <div class="flex items-center space-x-4 group/contact">
+                                                <div class="w-12 h-12 bg-gradient-to-br from-secondary to-yellow-300 rounded-xl flex items-center justify-center group-hover/contact:rotate-12 transition-transform duration-300">
+                                                    <span class="material-icons text-white">phone</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-white/80 text-sm">Telepon</p>
+                                                    <p class="text-white font-semibold text-lg">+62 21 1234 5678</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="flex items-center space-x-4 group/contact">
+                                                <div class="w-12 h-12 bg-gradient-to-br from-secondary to-yellow-300 rounded-xl flex items-center justify-center group-hover/contact:rotate-12 transition-transform duration-300">
+                                                    <span class="material-icons text-white">email</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-white/80 text-sm">Email</p>
+                                                    <p class="text-white font-semibold text-lg">info@gelbo.co.id</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="flex items-center space-x-4 group/contact">
+                                                <div class="w-12 h-12 bg-gradient-to-br from-secondary to-yellow-300 rounded-xl flex items-center justify-center group-hover/contact:rotate-12 transition-transform duration-300">
+                                                    <span class="material-icons text-white">location_on</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-white/80 text-sm">Lokasi</p>
+                                                    <p class="text-white font-semibold text-lg">Jakarta, Indonesia</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                                <h4 class="text-xl font-semibold mb-4">Untuk Konsumen</h4>
-                                <p class="text-green-100 mb-4">
-                                    Punya pertanyaan atau masukan mengenai produk kami? Kami senang mendengar dari Anda. 
-                                    Kepuasan Anda adalah prioritas kami.
-                                </p>
-                                <button class="btn-secondary">
-                                    Kirim Pesan
-                                </button>
+
+                            <!-- CTA Cards Section -->
+                            <div class="space-y-6">
+                                <!-- Partnership Card -->
+                                <div class="group relative bg-white/15 backdrop-blur-md rounded-3xl p-8 border border-white/30 hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-yellow-300/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div class="relative z-10">
+                                        <div class="flex items-center space-x-3 mb-6">
+                                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-yellow-300 rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                                <span class="material-icons text-white">handshake</span>
+                                            </div>
+                                            <h4 class="text-2xl font-bold text-white">Untuk Kemitraan & Distributor</h4>
+                                        </div>
+                                        <p class="text-white/90 mb-6 leading-relaxed">
+                                            Tertarik untuk menjadi mitra distributor produk Gëlbö? Hubungi tim sales kami 
+                                            untuk mendapatkan penawaran terbaik dan informasi lebih lanjut mengenai peluang bisnis bersama kami.
+                                        </p>
+                                        <button class="group/btn w-full bg-gradient-to-r from-secondary to-yellow-300 text-white font-semibold py-4 px-6 rounded-2xl hover:from-yellow-300 hover:to-secondary transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <span class="flex items-center justify-center">
+                                                <span class="mr-2">Hubungi Sales</span>
+                                                <span class="material-icons group-hover/btn:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Consumer Card -->
+                                <div class="group relative bg-white/15 backdrop-blur-md rounded-3xl p-8 border border-white/30 hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div class="relative z-10">
+                                        <div class="flex items-center space-x-3 mb-6">
+                                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                                <span class="material-icons text-white">people</span>
+                                            </div>
+                                            <h4 class="text-2xl font-bold text-white">Untuk Konsumen</h4>
+                                        </div>
+                                        <p class="text-white/90 mb-6 leading-relaxed">
+                                            Punya pertanyaan atau masukan mengenai produk kami? Kami senang mendengar dari Anda. 
+                                            Kepuasan Anda adalah prioritas kami.
+                                        </p>
+                                        <button class="group/btn w-full bg-gradient-to-r from-primary to-secondary text-white font-semibold py-4 px-6 rounded-2xl hover:from-secondary hover:to-primary transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <span class="flex items-center justify-center">
+                                                <span class="mr-2">Kirim Pesan</span>
+                                                <span class="material-icons group-hover/btn:translate-x-1 transition-transform duration-300">send</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -563,58 +637,162 @@
             </main>
 
             <!-- Footer -->
-            <footer class="bg-stone-900 dark:bg-black text-white p-8 md:p-12">
-                <div class="grid md:grid-cols-4 gap-8 border-t border-stone-800 pt-8">
-                    <div>
-                        <div class="flex items-center space-x-3 mb-4">
-                            <img 
-                                src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
-                                alt="PT Garuda Maju Bersama Nusantara Logo" 
-                                class="h-8 w-auto"
-                            />
-                            <div class="flex flex-col">
-                                <h5 class="font-bold text-lg text-white">PT Garuda Maju Bersama Nusantara</h5>
-                                <span class="text-sm text-stone-400">Gëlbö</span>
-                            </div>
-                        </div>
-                        <p class="text-stone-400 text-sm">
-                            Solusi higienis dan praktis untuk kebutuhan sehari-hari keluarga Indonesia.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h5 class="font-bold mb-4">Perusahaan</h5>
-                        <ul class="space-y-2 text-sm text-stone-400">
-                            <li><a class="hover:text-white transition-colors" href="#tentang">Tentang Kami</a></li>
-                            <li><a class="hover:text-white transition-colors" href="#visi-misi">Visi & Misi</a></li>
-                            <li><a class="hover:text-white transition-colors" href="#produk">Produk</a></li>
-                            <li><a class="hover:text-white transition-colors" href="#kontak">Kontak</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h5 class="font-bold mb-4">Produk</h5>
-                        <ul class="space-y-2 text-sm text-stone-400">
-                            <li><a class="hover:text-white transition-colors" href="#">Tisu Gëlbö</a></li>
-                            <li><a class="hover:text-white transition-colors" href="#">Sedotan Gëlbö</a></li>
-                            <li><a class="hover:text-white transition-colors" href="#">Kemasan Minuman</a></li>
-                            <li><a class="hover:text-white transition-colors" href="#">Produk Lainnya</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h5 class="font-bold mb-4">Sertifikasi</h5>
-                        <ul class="space-y-2 text-sm text-stone-400">
-                            <li>✓ Sertifikasi HALAL</li>
-                            <li>✓ Sertifikasi SVLK</li>
-                            <li>✓ Ramah Lingkungan</li>
-                            <li>✓ Standar Internasional</li>
-                        </ul>
-                    </div>
+            <footer class="relative bg-gradient-to-br from-stone-900 via-stone-800 to-black text-white overflow-hidden">
+                <!-- Background Elements -->
+                <div class="absolute inset-0">
+                    <div class="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-0 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent/5 rounded-full blur-2xl"></div>
                 </div>
                 
-                <div class="border-t border-stone-800 pt-8 mt-8 text-center text-sm text-stone-400">
-                    <p>&copy; 2024 PT Garuda Maju Bersama Nusantara. All rights reserved.</p>
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                    <!-- Main Footer Content -->
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
+                        <!-- Company Info -->
+                        <div class="lg:col-span-1 space-y-6">
+                            <div class="group">
+                                <div class="flex items-center space-x-4 mb-6">
+                                    <div class="relative">
+                                        <img 
+                                            src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
+                                            alt="PT Garuda Maju Bersama Nusantara Logo" 
+                                            class="h-12 w-auto group-hover:scale-110 transition-transform duration-300"
+                                        />
+                                        <div class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <h5 class="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+                                        PT Garuda Maju Bersama Nusantara
+                                    </h5>
+                                    <div class="inline-flex items-center px-3 py-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full">
+                                        <span class="text-sm font-semibold text-secondary">Gëlbö</span>
+                                    </div>
+                                    <p class="text-stone-300 leading-relaxed">
+                                        Solusi higienis dan praktis untuk kebutuhan sehari-hari keluarga Indonesia.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Social Links -->
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 group">
+                                    <span class="material-icons text-white text-lg group-hover:rotate-12 transition-transform duration-300">facebook</span>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 group">
+                                    <span class="material-icons text-white text-lg group-hover:rotate-12 transition-transform duration-300">instagram</span>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300 group">
+                                    <span class="material-icons text-white text-lg group-hover:rotate-12 transition-transform duration-300">linkedin</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Company Links -->
+                        <div class="space-y-6">
+                            <h5 class="text-lg font-bold text-white flex items-center">
+                                <span class="material-icons mr-2 text-primary">business</span>
+                                Perusahaan
+                            </h5>
+                            <ul class="space-y-3">
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#tentang">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Tentang Kami
+                                </a></li>
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#visi-misi">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Visi & Misi
+                                </a></li>
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#produk">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Produk
+                                </a></li>
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#kontak">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Kontak
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Product Links -->
+                        <div class="space-y-6">
+                            <h5 class="text-lg font-bold text-white flex items-center">
+                                <span class="material-icons mr-2 text-secondary">inventory</span>
+                                Produk
+                            </h5>
+                            <ul class="space-y-3">
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Tisu Gëlbö
+                                </a></li>
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Sedotan Gëlbö
+                                </a></li>
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Kemasan Minuman
+                                </a></li>
+                                <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                                    <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                    Produk Lainnya
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="space-y-6">
+                            <h5 class="text-lg font-bold text-white flex items-center">
+                                <span class="material-icons mr-2 text-accent">verified</span>
+                                Sertifikasi
+                            </h5>
+                            <div class="space-y-4">
+                                <div class="group flex items-center space-x-3 p-3 bg-gradient-to-r from-primary/10 to-transparent rounded-xl hover:from-primary/20 transition-all duration-300">
+                                    <div class="w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <span class="material-icons text-white text-sm">check</span>
+                                    </div>
+                                    <span class="text-stone-300 group-hover:text-white transition-colors duration-300">Sertifikasi HALAL</span>
+                                </div>
+                                <div class="group flex items-center space-x-3 p-3 bg-gradient-to-r from-secondary/10 to-transparent rounded-xl hover:from-secondary/20 transition-all duration-300">
+                                    <div class="w-6 h-6 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <span class="material-icons text-white text-sm">check</span>
+                                    </div>
+                                    <span class="text-stone-300 group-hover:text-white transition-colors duration-300">Sertifikasi SVLK</span>
+                                </div>
+                                <div class="group flex items-center space-x-3 p-3 bg-gradient-to-r from-accent/10 to-transparent rounded-xl hover:from-accent/20 transition-all duration-300">
+                                    <div class="w-6 h-6 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <span class="material-icons text-white text-sm">eco</span>
+                                    </div>
+                                    <span class="text-stone-300 group-hover:text-white transition-colors duration-300">Ramah Lingkungan</span>
+                                </div>
+                                <div class="group flex items-center space-x-3 p-3 bg-gradient-to-r from-primary/10 to-transparent rounded-xl hover:from-primary/20 transition-all duration-300">
+                                    <div class="w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <span class="material-icons text-white text-sm">star</span>
+                                    </div>
+                                    <span class="text-stone-300 group-hover:text-white transition-colors duration-300">Standar Internasional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer Bottom -->
+                    <div class="border-t border-stone-700/50 pt-8">
+                        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                            <div class="text-center md:text-left">
+                                <p class="text-stone-400 text-sm">
+                                    &copy; 2024 PT Garuda Maju Bersama Nusantara. All rights reserved.
+                                </p>
+                                <p class="text-stone-500 text-xs mt-1">
+                                    Designed with ❤️ for Indonesian families
+                                </p>
+                            </div>
+                            <div class="flex items-center space-x-6 text-sm text-stone-400">
+                                <a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                                <a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+                                <a href="#" class="hover:text-white transition-colors duration-300">Cookie Policy</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>
