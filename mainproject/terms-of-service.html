@@ -38,6 +38,13 @@
             },
         };
     </script>
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-stone-900 dark:text-white transition-colors duration-300">
     <div class="min-h-screen">
@@ -114,38 +121,73 @@
                     <p class="text-lg text-stone-600 dark:text-stone-400 mt-4">Terakhir diperbarui: 4 Oktober 2025</p>
                 </div>
 
-                <div class="space-y-8">
-                    <div class="p-8 bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
-                        <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">1. Perjanjian</h2>
-                        <p class="text-stone-600 dark:text-stone-300">Dengan mengakses situs web kami, Anda setuju untuk terikat oleh Syarat dan Ketentuan Layanan ini, semua hukum dan peraturan yang berlaku, dan setuju bahwa Anda bertanggung jawab untuk mematuhi hukum setempat yang berlaku. Jika Anda tidak setuju dengan salah satu persyaratan ini, Anda dilarang menggunakan atau mengakses situs ini.</p>
+                <div class="space-y-4">
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">1. Perjanjian</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-6 pt-0">
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Dengan mengakses situs web kami, Anda setuju untuk terikat oleh Syarat dan Ketentuan Layanan ini, semua hukum dan peraturan yang berlaku, dan setuju bahwa Anda bertanggung jawab untuk mematuhi hukum setempat yang berlaku. Jika Anda tidak setuju dengan salah satu persyaratan ini, Anda dilarang menggunakan atau mengakses situs ini.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="p-8 bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
-                        <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">2. Lisensi Penggunaan</h2>
-                        <p class="text-stone-600 dark:text-stone-300">Izin diberikan untuk mengunduh sementara satu salinan materi (informasi atau perangkat lunak) di situs web PT Garuda Maju Bersama Nusantara hanya untuk tampilan sementara non-komersial pribadi. Ini adalah pemberian lisensi, bukan transfer judul, dan di bawah lisensi ini Anda tidak boleh:</p>
-                        <ul class="list-disc list-inside space-y-2 mt-4 text-stone-600 dark:text-stone-300">
-                            <li>memodifikasi atau menyalin materi;</li>
-                            <li>menggunakan materi untuk tujuan komersial apa pun, atau untuk tampilan publik apa pun (komersial atau non-komersial);</li>
-                            <li>mencoba mendekompilasi atau merekayasa balik perangkat lunak apa pun yang terdapat di situs web PT Garuda Maju Bersama Nusantara;</li>
-                            <li>menghapus hak cipta atau notasi kepemilikan lainnya dari materi; atau</li>
-                            <li>mentransfer materi ke orang lain atau "mencerminkan" materi di server lain mana pun.</li>
-                        </ul>
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">2. Lisensi Penggunaan</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-6 pt-0">
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Izin diberikan untuk mengunduh sementara satu salinan materi (informasi atau perangkat lunak) di situs web PT Garuda Maju Bersama Nusantara hanya untuk tampilan sementara non-komersial pribadi. Ini adalah pemberian lisensi, bukan transfer judul, dan di bawah lisensi ini Anda tidak boleh:</p>
+                                <ul class="list-disc list-inside space-y-2 mt-4 text-stone-600 dark:text-stone-300 leading-relaxed">
+                                    <li>memodifikasi atau menyalin materi;</li>
+                                    <li>menggunakan materi untuk tujuan komersial apa pun, atau untuk tampilan publik apa pun (komersial atau non-komersial);</li>
+                                    <li>mencoba mendekompilasi atau merekayasa balik perangkat lunak apa pun yang terdapat di situs web PT Garuda Maju Bersama Nusantara;</li>
+                                    <li>menghapus hak cipta atau notasi kepemilikan lainnya dari materi; atau</li>
+                                    <li>mentransfer materi ke orang lain atau "mencerminkan" materi di server lain mana pun.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="p-8 bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
-                        <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">3. Batasan</h2>
-                        <p class="text-stone-600 dark:text-stone-300">Dalam keadaan apa pun, PT Garuda Maju Bersama Nusantara atau pemasoknya tidak akan bertanggung jawab atas segala kerusakan (termasuk, tanpa batasan, kerusakan karena kehilangan data atau keuntungan, atau karena gangguan bisnis) yang timbul dari penggunaan atau ketidakmampuan untuk menggunakan materi di situs web PT Garuda Maju Bersama Nusantara, bahkan jika PT Garuda Maju Bersama Nusantara atau perwakilan resmi PT Garuda Maju Bersama Nusantara telah diberitahu secara lisan atau tertulis tentang kemungkinan kerusakan tersebut.</p>
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">3. Batasan</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-6 pt-0">
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Dalam keadaan apa pun, PT Garuda Maju Bersama Nusantara atau pemasoknya tidak akan bertanggung jawab atas segala kerusakan (termasuk, tanpa batasan, kerusakan karena kehilangan data atau keuntungan, atau karena gangguan bisnis) yang timbul dari penggunaan atau ketidakmampuan untuk menggunakan materi di situs web PT Garuda Maju Bersama Nusantara, bahkan jika PT Garuda Maju Bersama Nusantara atau perwakilan resmi PT Garuda Maju Bersama Nusantara telah diberitahu secara lisan atau tertulis tentang kemungkinan kerusakan tersebut.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="p-8 bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
-                        <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">4. Hukum yang Mengatur</h2>
-                        <p class="text-stone-600 dark:text-stone-300">Setiap klaim yang berkaitan dengan situs web PT Garuda Maju Bersama Nusantara akan diatur oleh hukum Negara Indonesia tanpa memperhatikan pertentangan ketentuan hukumnya.</p>
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">4. Hukum yang Mengatur</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-6 pt-0">
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Setiap klaim yang berkaitan dengan situs web PT Garuda Maju Bersama Nusantara akan diatur oleh hukum Negara Indonesia tanpa memperhatikan pertentangan ketentuan hukumnya.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="p-8 bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
-                        <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">Hubungi Kami</h2>
-                        <p class="text-stone-600 dark:text-stone-300">Jika Anda memiliki pertanyaan tentang Syarat dan Ketentuan Layanan ini, silakan hubungi kami di:</p>
-                        <p class="text-stone-600 dark:text-stone-300 mt-4">PT Garuda Maju Bersama Nusantara<br>Jl. Raya Kebayoran Lama No. 12<br>Jakarta Selatan, Indonesia<br>info@gelbo.co.id</p>
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">Hubungi Kami</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-6 pt-0">
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Jika Anda memiliki pertanyaan tentang Syarat dan Ketentuan Layanan ini, silakan hubungi kami di:</p>
+                                <p class="text-stone-600 dark:text-stone-300 mt-4 leading-relaxed">PT Garuda Maju Bersama Nusantara<br>Jl. Raya Kebayoran Lama No. 12<br>Jakarta Selatan, Indonesia<br>info@gelbo.co.id</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,6 +357,26 @@
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('open');
         }
+
+        // Accordion functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            const content = item.querySelector('.accordion-content');
+            const icon = header.querySelector('.material-icons');
+
+            header.addEventListener('click', () => {
+                item.classList.toggle('open');
+                if (item.classList.contains('open')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
     </script>
 </body>
 </html>
