@@ -42,7 +42,19 @@
         .accordion-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease-out;
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .accordion-item.open .accordion-content {
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .accordion-header {
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .dark .accordion-header:hover {
+            background-color: rgba(255,255,255,0.05);
         }
     </style>
 </head>
@@ -122,51 +134,51 @@
                 </div>
 
                 <div class="space-y-4">
-                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg overflow-hidden">
                         <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
-                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">Apa itu Cookie?</h2>
-                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center"><span class="material-icons text-primary mr-3">cookie</span>Apa itu Cookie?</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-500">expand_more</span>
                         </button>
                         <div class="accordion-content">
                             <div class="p-6 pt-0">
-                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Cookie adalah file teks kecil yang ditempatkan di komputer Anda oleh situs web yang Anda kunjungi. Mereka banyak digunakan untuk membuat situs web berfungsi, atau bekerja lebih efisien, serta untuk memberikan informasi kepada pemilik situs.</p>
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed text-lg">Cookie adalah file teks kecil yang ditempatkan di komputer Anda oleh situs web yang Anda kunjungi. Mereka banyak digunakan untuk membuat situs web berfungsi, atau bekerja lebih efisien, serta untuk memberikan informasi kepada pemilik situs.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg overflow-hidden">
                         <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
-                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">Bagaimana Kami Menggunakan Cookie</h2>
-                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center"><span class="material-icons text-primary mr-3">settings</span>Bagaimana Kami Menggunakan Cookie</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-500">expand_more</span>
                         </button>
                         <div class="accordion-content">
                             <div class="p-6 pt-0">
-                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Kami menggunakan cookie untuk beberapa alasan, yang dirinci di bawah ini. Sayangnya, dalam kebanyakan kasus, tidak ada opsi standar industri untuk menonaktifkan cookie tanpa sepenuhnya menonaktifkan fungsionalitas dan fitur yang mereka tambahkan ke situs ini. Disarankan agar Anda membiarkan semua cookie jika Anda tidak yakin apakah Anda membutuhkannya atau tidak jika cookie tersebut digunakan untuk menyediakan layanan yang Anda gunakan.</p>
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed text-lg">Kami menggunakan cookie untuk beberapa alasan, yang dirinci di bawah ini. Sayangnya, dalam kebanyakan kasus, tidak ada opsi standar industri untuk menonaktifkan cookie tanpa sepenuhnya menonaktifkan fungsionalitas dan fitur yang mereka tambahkan ke situs ini. Disarankan agar Anda membiarkan semua cookie jika Anda tidak yakin apakah Anda membutuhkannya atau tidak jika cookie tersebut digunakan untuk menyediakan layanan yang Anda gunakan.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg overflow-hidden">
                         <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
-                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">Menonaktifkan Cookie</h2>
-                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center"><span class="material-icons text-primary mr-3">block</span>Menonaktifkan Cookie</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-500">expand_more</span>
                         </button>
                         <div class="accordion-content">
                             <div class="p-6 pt-0">
-                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Anda dapat mencegah pengaturan cookie dengan menyesuaikan pengaturan pada browser Anda (lihat Bantuan browser Anda untuk cara melakukannya). Ketahuilah bahwa menonaktifkan cookie akan memengaruhi fungsionalitas situs ini dan banyak situs web lain yang Anda kunjungi. Menonaktifkan cookie biasanya akan mengakibatkan juga menonaktifkan fungsionalitas dan fitur tertentu dari situs ini. Oleh karena itu disarankan agar Anda tidak menonaktifkan cookie.</p>
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed text-lg">Anda dapat mencegah pengaturan cookie dengan menyesuaikan pengaturan pada browser Anda (lihat <i>Bantuan browser Anda</i> untuk cara melakukannya). Ketahuilah bahwa <b>menonaktifkan cookie akan memengaruhi fungsionalitas situs ini</b> dan banyak situs web lain yang Anda kunjungi. Menonaktifkan cookie biasanya akan mengakibatkan juga menonaktifkan fungsionalitas dan fitur tertentu dari situs ini. Oleh karena itu disarankan agar Anda tidak menonaktifkan cookie.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg">
+                    <div class="accordion-item bg-white dark:bg-stone-800 rounded-2xl shadow-lg overflow-hidden">
                         <button class="accordion-header w-full flex justify-between items-center p-6 text-left">
-                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white">Hubungi Kami</h2>
-                            <span class="material-icons text-primary transform transition-transform duration-300">expand_more</span>
+                            <h2 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center"><span class="material-icons text-primary mr-3">contact_support</span>Hubungi Kami</h2>
+                            <span class="material-icons text-primary transform transition-transform duration-500">expand_more</span>
                         </button>
                         <div class="accordion-content">
                             <div class="p-6 pt-0">
-                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed">Jika Anda memiliki pertanyaan tentang Kebijakan Cookie kami, silakan hubungi kami di:</p>
-                                <p class="text-stone-600 dark:text-stone-300 mt-4 leading-relaxed">PT Garuda Maju Bersama Nusantara<br>Jl. Raya Kebayoran Lama No. 12<br>Jakarta Selatan, Indonesia<br>info@gelbo.co.id</p>
+                                <p class="text-stone-600 dark:text-stone-300 leading-relaxed text-lg">Jika Anda memiliki pertanyaan tentang Kebijakan Cookie kami, silakan hubungi kami di:</p>
+                                <p class="text-stone-600 dark:text-stone-300 mt-4 leading-relaxed text-lg"><b>PT Garuda Maju Bersama Nusantara</b><br>Jl. Raya Kebayoran Lama No. 12<br>Jakarta Selatan, Indonesia<br><i>info@gelbo.co.id</i></p>
                             </div>
                         </div>
                     </div>
