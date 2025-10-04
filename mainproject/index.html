@@ -209,61 +209,195 @@
                 </section>
 
                 <!-- Stats Section -->
-                <section class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center py-12">
-                    <div class="animate-fade-in-up">
-                        <p class="stat-number">500+</p>
-                        <p class="text-stone-500 dark:text-stone-400 mt-2">Produk Berkualitas</p>
+                <section class="relative py-20 overflow-hidden">
+                    <!-- Background Elements -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5"></div>
+                    <div class="absolute top-0 left-0 w-full h-full">
+                        <div class="absolute top-10 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
+                        <div class="absolute top-32 right-20 w-32 h-32 bg-secondary/10 rounded-full blur-xl animate-pulse delay-1000"></div>
+                        <div class="absolute bottom-20 left-1/4 w-24 h-24 bg-accent/10 rounded-full blur-xl animate-pulse delay-2000"></div>
                     </div>
+                    
+                    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl md:text-5xl font-bold text-stone-900 dark:text-white mb-4">
+                                Pencapaian Kami
+                            </h2>
+                            <p class="text-xl text-stone-600 dark:text-stone-400 max-w-2xl mx-auto">
+                                Angka-angka yang membuktikan komitmen kami terhadap kualitas dan inovasi
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <!-- Stat Card 1 -->
+                            <div class="stat-card group relative bg-white/80 dark:bg-stone-800/80 backdrop-blur-sm rounded-2xl p-8 text-center border border-stone-200/50 dark:border-stone-700/50 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="relative z-10">
+                                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                        <span class="material-icons text-white text-2xl">inventory</span>
+                                    </div>
+                                    <div class="stat-number text-4xl md:text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
+                                    <p class="text-stone-600 dark:text-stone-400 font-medium">Produk Berkualitas</p>
+                                    <div class="mt-4 w-12 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+                                </div>
+                            </div>
 
-                    <div class="animate-fade-in-up">
-                        <p class="stat-number">20+</p>
-                        <p class="text-stone-500 dark:text-stone-400 mt-2">Tahun Pengalaman</p>
-                    </div>
+                            <!-- Stat Card 2 -->
+                            <div class="stat-card group relative bg-white/80 dark:bg-stone-800/80 backdrop-blur-sm rounded-2xl p-8 text-center border border-stone-200/50 dark:border-stone-700/50 hover:border-secondary/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                                <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="relative z-10">
+                                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                        <span class="material-icons text-white text-2xl">schedule</span>
+                                    </div>
+                                    <div class="stat-number text-4xl md:text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">20+</div>
+                                    <p class="text-stone-600 dark:text-stone-400 font-medium">Tahun Pengalaman</p>
+                                    <div class="mt-4 w-12 h-1 bg-gradient-to-r from-secondary to-accent mx-auto rounded-full"></div>
+                                </div>
+                            </div>
 
-                    <div class="animate-fade-in-up">
-                        <p class="stat-number">1000+</p>
-                        <p class="text-stone-500 dark:text-stone-400 mt-2">Pelanggan Puas</p>
-                    </div>
+                            <!-- Stat Card 3 -->
+                            <div class="stat-card group relative bg-white/80 dark:bg-stone-800/80 backdrop-blur-sm rounded-2xl p-8 text-center border border-stone-200/50 dark:border-stone-700/50 hover:border-accent/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                                <div class="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="relative z-10">
+                                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                        <span class="material-icons text-white text-2xl">people</span>
+                                    </div>
+                                    <div class="stat-number text-4xl md:text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">1000+</div>
+                                    <p class="text-stone-600 dark:text-stone-400 font-medium">Pelanggan Puas</p>
+                                    <div class="mt-4 w-12 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full"></div>
+                                </div>
+                            </div>
 
-                    <div class="animate-fade-in-up">
-                        <p class="stat-number">100%</p>
-                        <p class="text-stone-500 dark:text-stone-400 mt-2">Ramah Lingkungan</p>
+                            <!-- Stat Card 4 -->
+                            <div class="stat-card group relative bg-white/80 dark:bg-stone-800/80 backdrop-blur-sm rounded-2xl p-8 text-center border border-stone-200/50 dark:border-stone-700/50 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div class="relative z-10">
+                                    <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                        <span class="material-icons text-white text-2xl">eco</span>
+                                    </div>
+                                    <div class="stat-number text-4xl md:text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">100%</div>
+                                    <p class="text-stone-600 dark:text-stone-400 font-medium">Ramah Lingkungan</p>
+                                    <div class="mt-4 w-12 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <!-- Vision & Mission Section -->
-                <section id="visi-misi" class="grid md:grid-cols-2 gap-8 items-center">
-                    <div class="relative rounded-lg overflow-hidden h-96">
-                        <img
-                            alt="Tim Gëlbö yang berdedikasi"
-                            class="w-full h-full object-cover"
-                            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-                        />
-                    </div>
-
-                    <div class="space-y-6">
-                        <div>
-                            <span class="text-primary text-sm font-semibold">Visi & Misi</span>
-                            <h3 class="text-5xl font-light mt-2">Masa Depan yang Lebih Baik</h3>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="text-xl font-semibold text-primary mb-2">Visi</h4>
-                                <p class="text-stone-600 dark:text-stone-400">
-                                    Menjadi perusahaan penyedia produk kebutuhan sehari-hari terdepan dan paling terpercaya 
-                                    di Asia Tenggara, yang dikenal akan kualitas, inovasi, dan komitmen terhadap kelestarian lingkungan.
-                                </p>
+                <section id="visi-misi" class="relative py-20 overflow-hidden">
+                    <!-- Background Elements -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-stone-50 via-white to-stone-100 dark:from-stone-900 dark:via-stone-800 dark:to-stone-900"></div>
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-primary/10 to-transparent rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-secondary/10 to-transparent rounded-full blur-3xl"></div>
+                    
+                    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <!-- Image Section -->
+                            <div class="relative group">
+                                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                                    <img
+                                        alt="Tim Gëlbö yang berdedikasi"
+                                        class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
+                                        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                                    />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-6 left-6 right-6">
+                                        <div class="bg-white/90 dark:bg-stone-800/90 backdrop-blur-sm rounded-2xl p-6">
+                                            <div class="flex items-center space-x-3 mb-3">
+                                                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                                <span class="text-sm font-semibold text-primary">Tim Profesional</span>
+                                            </div>
+                                            <h4 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Komitmen Kualitas</h4>
+                                            <p class="text-stone-600 dark:text-stone-400 text-sm">
+                                                Tim berpengalaman yang berdedikasi untuk memberikan yang terbaik
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Floating Elements -->
+                                <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-xl animate-bounce">
+                                    <span class="material-icons text-white text-2xl">star</span>
+                                </div>
+                                <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center shadow-xl animate-pulse">
+                                    <span class="material-icons text-white text-xl">trending_up</span>
+                                </div>
                             </div>
-                            
-                            <div>
-                                <h4 class="text-xl font-semibold text-primary mb-2">Misi</h4>
-                                <ul class="text-stone-600 dark:text-stone-400 space-y-2">
-                                    <li>• Menghasilkan produk higienis berkualitas tinggi</li>
-                                    <li>• Membangun jaringan distribusi yang kuat</li>
-                                    <li>• Terus berinovasi dalam setiap lini produk</li>
-                                    <li>• Menjalankan operasional yang berkelanjutan</li>
-                                </ul>
+
+                            <!-- Content Section -->
+                            <div class="space-y-8">
+                                <div class="text-center lg:text-left">
+                                    <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full mb-4">
+                                        <span class="material-icons text-primary mr-2">visibility</span>
+                                        <span class="text-primary text-sm font-semibold">Visi & Misi</span>
+                                    </div>
+                                    <h3 class="text-4xl lg:text-5xl font-bold text-stone-900 dark:text-white mb-4">
+                                        Masa Depan yang 
+                                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                                            Lebih Baik
+                                        </span>
+                                    </h3>
+                                    <p class="text-xl text-stone-600 dark:text-stone-400">
+                                        Membangun masa depan yang berkelanjutan melalui inovasi dan komitmen
+                                    </p>
+                                </div>
+                                
+                                <!-- Vision Card -->
+                                <div class="group relative bg-white/80 dark:bg-stone-800/80 backdrop-blur-sm rounded-2xl p-8 border border-stone-200/50 dark:border-stone-700/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div class="relative z-10">
+                                        <div class="flex items-center space-x-3 mb-4">
+                                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                                <span class="material-icons text-white">visibility</span>
+                                            </div>
+                                            <h4 class="text-2xl font-bold text-stone-900 dark:text-white">Visi</h4>
+                                        </div>
+                                        <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
+                                            Menjadi perusahaan penyedia produk kebutuhan sehari-hari terdepan dan paling terpercaya 
+                                            di Asia Tenggara, yang dikenal akan kualitas, inovasi, dan komitmen terhadap kelestarian lingkungan.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mission Card -->
+                                <div class="group relative bg-white/80 dark:bg-stone-800/80 backdrop-blur-sm rounded-2xl p-8 border border-stone-200/50 dark:border-stone-700/50 hover:border-secondary/50 transition-all duration-500 hover:shadow-xl">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div class="relative z-10">
+                                        <div class="flex items-center space-x-3 mb-6">
+                                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                                <span class="material-icons text-white">flag</span>
+                                            </div>
+                                            <h4 class="text-2xl font-bold text-stone-900 dark:text-white">Misi</h4>
+                                        </div>
+                                        <div class="grid gap-4">
+                                            <div class="flex items-start space-x-3 group/mission">
+                                                <div class="w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover/mission:scale-110 transition-transform duration-300">
+                                                    <span class="material-icons text-white text-sm">check</span>
+                                                </div>
+                                                <p class="text-stone-600 dark:text-stone-400">Menghasilkan produk higienis berkualitas tinggi</p>
+                                            </div>
+                                            <div class="flex items-start space-x-3 group/mission">
+                                                <div class="w-6 h-6 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover/mission:scale-110 transition-transform duration-300">
+                                                    <span class="material-icons text-white text-sm">check</span>
+                                                </div>
+                                                <p class="text-stone-600 dark:text-stone-400">Membangun jaringan distribusi yang kuat</p>
+                                            </div>
+                                            <div class="flex items-start space-x-3 group/mission">
+                                                <div class="w-6 h-6 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover/mission:scale-110 transition-transform duration-300">
+                                                    <span class="material-icons text-white text-sm">check</span>
+                                                </div>
+                                                <p class="text-stone-600 dark:text-stone-400">Terus berinovasi dalam setiap lini produk</p>
+                                            </div>
+                                            <div class="flex items-start space-x-3 group/mission">
+                                                <div class="w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1 group-hover/mission:scale-110 transition-transform duration-300">
+                                                    <span class="material-icons text-white text-sm">check</span>
+                                                </div>
+                                                <p class="text-stone-600 dark:text-stone-400">Menjalankan operasional yang berkelanjutan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
