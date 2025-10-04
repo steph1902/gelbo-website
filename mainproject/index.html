@@ -43,33 +43,71 @@
     <body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200">
         <div class="mx-auto max-w-screen-xl">
             <!-- Header -->
-            <header class="flex justify-between items-center p-4 border-b border-stone-200 dark:border-stone-800">
-                <div class="flex items-center space-x-3">
-                    <img 
-                        src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
-                        alt="PT Garuda Maju Bersama Nusantara Logo" 
-                        class="h-12 w-auto"
-                    />
-                    <div class="flex flex-col">
-                        <h1 class="text-lg font-bold text-primary">PT Garuda Maju Bersama Nusantara</h1>
-                        <span class="text-sm text-stone-600 dark:text-stone-400">Gëlbö</span>
+            <header class="sticky top-0 z-50 bg-white/95 dark:bg-stone-900/95 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-700/50 shadow-sm">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between items-center h-16">
+                        <!-- Logo Section -->
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-3 group">
+                                <div class="relative">
+                                    <img 
+                                        src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
+                                        alt="PT Garuda Maju Bersama Nusantara Logo" 
+                                        class="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+                                    />
+                                </div>
+                                <div class="hidden sm:block">
+                                    <h1 class="text-lg font-bold text-stone-900 dark:text-white tracking-tight">PT Garuda Maju Bersama Nusantara</h1>
+                                    <p class="text-xs text-stone-500 dark:text-stone-400 font-medium">Excellence in Quality</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desktop Navigation -->
+                        <nav class="hidden lg:flex items-center space-x-1">
+                            <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="#tentang">
+                                <span class="relative z-10">Tentang Kami</span>
+                                <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                            </a>
+                            <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="#produk">
+                                <span class="relative z-10">Produk</span>
+                                <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                            </a>
+                            <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="#visi-misi">
+                                <span class="relative z-10">Visi & Misi</span>
+                                <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                            </a>
+                            <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="#kontak">
+                                <span class="relative z-10">Kontak</span>
+                                <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                            </a>
+                        </nav>
+
+                        <!-- CTA Button & Mobile Menu -->
+                        <div class="flex items-center space-x-3">
+                            <button class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                <span class="mr-2">Hubungi Kami</span>
+                                <span class="material-icons text-sm">arrow_forward</span>
+                            </button>
+                            
+                            <!-- Mobile Menu Button -->
+                            <button class="lg:hidden relative p-2 text-stone-600 dark:text-stone-400 hover:text-primary transition-colors duration-200" onclick="toggleMobileMenu()">
+                                <div class="w-6 h-6 flex flex-col justify-center space-y-1">
+                                    <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                                    <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                                    <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <nav class="hidden md:flex items-center space-x-6 text-sm">
-                    <a class="hover:text-primary transition-colors" href="#tentang">Tentang Kami</a>
-                    <a class="hover:text-primary transition-colors" href="#produk">Produk</a>
-                    <a class="hover:text-primary transition-colors" href="#visi-misi">Visi & Misi</a>
-                    <a class="hover:text-primary transition-colors" href="#kontak">Kontak</a>
-                </nav>
-                <button class="md:hidden" onclick="toggleMobileMenu()">
-                    <span class="material-icons">menu</span>
-                </button>
             </header>
 
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white dark:bg-stone-900 shadow-xl transform translate-x-full transition-transform duration-300 z-50">
-                <div class="p-6">
-                    <div class="flex justify-between items-center mb-8">
+            <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white/95 dark:bg-stone-900/95 backdrop-blur-md shadow-2xl transform translate-x-full transition-all duration-300 z-50 border-l border-stone-200/50 dark:border-stone-700/50">
+                <div class="flex flex-col h-full">
+                    <!-- Mobile Menu Header -->
+                    <div class="flex justify-between items-center p-6 border-b border-stone-200/50 dark:border-stone-700/50">
                         <div class="flex items-center space-x-3">
                             <img 
                                 src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
@@ -77,20 +115,42 @@
                                 class="h-8 w-auto"
                             />
                             <div class="flex flex-col">
-                                <h2 class="text-lg font-bold text-primary">PT Garuda Maju Bersama Nusantara</h2>
-                                <span class="text-sm text-stone-600 dark:text-stone-400">Gëlbö</span>
+                                <h2 class="text-sm font-bold text-stone-900 dark:text-white">PT Garuda Maju Bersama Nusantara</h2>
+                                <p class="text-xs text-stone-500 dark:text-stone-400">Excellence in Quality</p>
                             </div>
                         </div>
-                        <button onclick="toggleMobileMenu()" class="text-stone-600">
-                            <span class="material-icons">close</span>
+                        <button onclick="toggleMobileMenu()" class="p-2 text-stone-600 dark:text-stone-400 hover:text-primary transition-colors duration-200 rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800">
+                            <span class="material-icons text-xl">close</span>
                         </button>
                     </div>
-                    <nav class="space-y-4">
-                        <a class="block text-lg text-stone-800 dark:text-stone-200 hover:text-primary transition-colors" href="#tentang" onclick="toggleMobileMenu()">Tentang Kami</a>
-                        <a class="block text-lg text-stone-800 dark:text-stone-200 hover:text-primary transition-colors" href="#produk" onclick="toggleMobileMenu()">Produk</a>
-                        <a class="block text-lg text-stone-800 dark:text-stone-200 hover:text-primary transition-colors" href="#visi-misi" onclick="toggleMobileMenu()">Visi & Misi</a>
-                        <a class="block text-lg text-stone-800 dark:text-stone-200 hover:text-primary transition-colors" href="#kontak" onclick="toggleMobileMenu()">Kontak</a>
+                    
+                    <!-- Mobile Menu Navigation -->
+                    <nav class="flex-1 p-6 space-y-2">
+                        <a class="mobile-nav-link group flex items-center px-4 py-3 text-base font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-xl hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5" href="#tentang" onclick="toggleMobileMenu()">
+                            <span class="material-icons mr-3 text-lg group-hover:scale-110 transition-transform duration-200">business</span>
+                            <span>Tentang Kami</span>
+                        </a>
+                        <a class="mobile-nav-link group flex items-center px-4 py-3 text-base font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-xl hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5" href="#produk" onclick="toggleMobileMenu()">
+                            <span class="material-icons mr-3 text-lg group-hover:scale-110 transition-transform duration-200">inventory</span>
+                            <span>Produk</span>
+                        </a>
+                        <a class="mobile-nav-link group flex items-center px-4 py-3 text-base font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-xl hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5" href="#visi-misi" onclick="toggleMobileMenu()">
+                            <span class="material-icons mr-3 text-lg group-hover:scale-110 transition-transform duration-200">visibility</span>
+                            <span>Visi & Misi</span>
+                        </a>
+                        <a class="mobile-nav-link group flex items-center px-4 py-3 text-base font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-xl hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5" href="#kontak" onclick="toggleMobileMenu()">
+                            <span class="material-icons mr-3 text-lg group-hover:scale-110 transition-transform duration-200">contact_phone</span>
+                            <span>Kontak</span>
+                        </a>
                     </nav>
+                    
+                    <!-- Mobile Menu CTA -->
+                    <div class="p-6 border-t border-stone-200/50 dark:border-stone-700/50">
+                        <button class="w-full flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            <span class="mr-2">Hubungi Kami</span>
+                            <span class="material-icons text-sm">arrow_forward</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -222,98 +282,93 @@
                         </p>
                     </div>
 
-                    <div class="grid md:grid-cols-3 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <!-- Tisu Gëlbö -->
-                        <div class="md:col-span-1 space-y-4">
-                            <div class="product-card relative rounded-lg overflow-hidden group h-64">
-                                <img
-                                    alt="Tisu Gëlbö premium"
-                                    class="w-full h-full object-cover"
-                                    src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                />
+                        <div class="product-card relative rounded-lg overflow-hidden group h-64">
+                            <img
+                                alt="Tisu Gëlbö premium"
+                                class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            />
 
-                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                                    <div class="flex justify-between items-end">
-                                        <h4 class="text-white text-2xl font-light">Tisu Gëlbö</h4>
-                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
-                                            <span class="material-icons">arrow_forward</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product-card relative rounded-lg overflow-hidden group h-64">
-                                <img
-                                    alt="Tisu toilet Gëlbö"
-                                    class="w-full h-full object-cover"
-                                    src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                />
-
-                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                                    <div class="flex justify-between items-end">
-                                        <h4 class="text-white text-2xl font-light">Tisu Toilet</h4>
-                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
-                                            <span class="material-icons">arrow_forward</span>
-                                        </a>
-                                    </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                <div class="flex justify-between items-end">
+                                    <h4 class="text-white text-2xl font-light">Tisu Gëlbö</h4>
+                                    <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                        <span class="material-icons">arrow_forward</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Sedotan Gëlbö -->
-                        <div class="md:col-span-1 space-y-4">
-                            <div class="product-card relative rounded-lg overflow-hidden group h-64">
-                                <img
-                                    alt="Sedotan ramah lingkungan Gëlbö"
-                                    class="w-full h-full object-cover"
-                                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                />
+                        <div class="product-card relative rounded-lg overflow-hidden group h-64">
+                            <img
+                                alt="Sedotan ramah lingkungan Gëlbö"
+                                class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            />
 
-                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                                    <div class="flex justify-between items-end">
-                                        <h4 class="text-white text-2xl font-light">Sedotan Gëlbö</h4>
-                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
-                                            <span class="material-icons">arrow_forward</span>
-                                        </a>
-                                    </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                <div class="flex justify-between items-end">
+                                    <h4 class="text-white text-2xl font-light">Sedotan Gëlbö</h4>
+                                    <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                        <span class="material-icons">arrow_forward</span>
+                                    </a>
                                 </div>
                             </div>
-
                         </div>
 
-                        <!-- Kemasan Minuman -->
-                        <div class="md:col-span-1 space-y-4">
-                            <div class="product-card relative rounded-lg overflow-hidden group h-64">
-                                <img
-                                    alt="Paper cup Gëlbö"
-                                    class="w-full h-full object-cover"
-                                    src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                />
+                        <!-- Paper Cup -->
+                        <div class="product-card relative rounded-lg overflow-hidden group h-64">
+                            <img
+                                alt="Paper cup Gëlbö"
+                                class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            />
 
-                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                                    <div class="flex justify-between items-end">
-                                        <h4 class="text-white text-2xl font-light">Paper Cup</h4>
-                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
-                                            <span class="material-icons">arrow_forward</span>
-                                        </a>
-                                    </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                <div class="flex justify-between items-end">
+                                    <h4 class="text-white text-2xl font-light">Paper Cup</h4>
+                                    <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                        <span class="material-icons">arrow_forward</span>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="product-card relative rounded-lg overflow-hidden group h-64">
-                                <img
-                                    alt="Plastic cup Gëlbö"
-                                    class="w-full h-full object-cover"
-                                    src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                />
+                        <!-- Tisu Toilet -->
+                        <div class="product-card relative rounded-lg overflow-hidden group h-64">
+                            <img
+                                alt="Tisu toilet Gëlbö"
+                                class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            />
 
-                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                                    <div class="flex justify-between items-end">
-                                        <h4 class="text-white text-2xl font-light">Plastic Cup</h4>
-                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
-                                            <span class="material-icons">arrow_forward</span>
-                                        </a>
-                                    </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                <div class="flex justify-between items-end">
+                                    <h4 class="text-white text-2xl font-light">Tisu Toilet</h4>
+                                    <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                        <span class="material-icons">arrow_forward</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Plastic Cup -->
+                        <div class="product-card relative rounded-lg overflow-hidden group h-64 md:col-span-2 lg:col-span-1">
+                            <img
+                                alt="Plastic cup Gëlbö"
+                                class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            />
+
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                <div class="flex justify-between items-end">
+                                    <h4 class="text-white text-2xl font-light">Plastic Cup</h4>
+                                    <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                        <span class="material-icons">arrow_forward</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
