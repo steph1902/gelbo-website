@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gëlbö - Solusi Higienis untuk Kebutuhan Sehari-hari</title>
+        <title>PT Garuda Maju Bersama Nusantara - Gëlbö</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
@@ -45,10 +45,15 @@
             <!-- Header -->
             <header class="flex justify-between items-center p-4 border-b border-stone-200 dark:border-stone-800">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">G</span>
+                    <img 
+                        src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
+                        alt="PT Garuda Maju Bersama Nusantara Logo" 
+                        class="h-12 w-auto"
+                    />
+                    <div class="flex flex-col">
+                        <h1 class="text-lg font-bold text-primary">PT Garuda Maju Bersama Nusantara</h1>
+                        <span class="text-sm text-stone-600 dark:text-stone-400">Gëlbö</span>
                     </div>
-                    <h1 class="text-xl font-bold tracking-wider text-primary">Gëlbö</h1>
                 </div>
                 <nav class="hidden md:flex items-center space-x-6 text-sm">
                     <a class="hover:text-primary transition-colors" href="#tentang">Tentang Kami</a>
@@ -62,14 +67,19 @@
             </header>
 
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="mobile-menu">
+            <div id="mobileMenu" class="fixed top-0 right-0 h-full w-80 bg-white dark:bg-stone-900 shadow-xl transform translate-x-full transition-transform duration-300 z-50">
                 <div class="p-6">
                     <div class="flex justify-between items-center mb-8">
                         <div class="flex items-center space-x-3">
-                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                                <span class="text-white font-bold">G</span>
+                            <img 
+                                src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
+                                alt="PT Garuda Maju Bersama Nusantara Logo" 
+                                class="h-8 w-auto"
+                            />
+                            <div class="flex flex-col">
+                                <h2 class="text-lg font-bold text-primary">PT Garuda Maju Bersama Nusantara</h2>
+                                <span class="text-sm text-stone-600 dark:text-stone-400">Gëlbö</span>
                             </div>
-                            <h2 class="text-xl font-bold text-primary">Gëlbö</h2>
                         </div>
                         <button onclick="toggleMobileMenu()" class="text-stone-600">
                             <span class="material-icons">close</span>
@@ -94,7 +104,8 @@
                     />
 
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-start p-8 md:p-16">
-                        <h2 class="text-white text-6xl md:text-8xl font-light">Gëlbö</h2>
+                        <h2 class="text-white text-4xl md:text-6xl font-light">PT Garuda Maju Bersama Nusantara</h2>
+                        <h3 class="text-white text-2xl md:text-3xl font-light mt-2 text-green-300">Gëlbö</h3>
                         <p class="text-white mt-4 max-w-md text-lg">
                             Solusi higienis dan praktis untuk setiap kebutuhan keluarga Indonesia. 
                             Produk berkualitas dengan standar internasional.
@@ -201,7 +212,10 @@
                 <!-- Products Section -->
                 <section id="produk" class="space-y-8">
                     <div class="flex justify-between items-end">
-                        <h3 class="text-5xl font-light max-w-lg">Produk Unggulan Kami</h3>
+                        <div>
+                            <h3 class="text-5xl font-light max-w-lg">Produk Unggulan</h3>
+                            <p class="text-primary text-lg font-medium mt-2">Gëlbö Brand</p>
+                        </div>
                         <p class="text-stone-500 dark:text-stone-400 max-w-sm text-sm">
                             Solusi higienis dan praktis untuk setiap kebutuhan dengan standar kualitas tertinggi 
                             dan bahan alami pilihan yang ramah lingkungan.
@@ -265,22 +279,6 @@
                                 </div>
                             </div>
 
-                            <div class="product-card relative rounded-lg overflow-hidden group h-64">
-                                <img
-                                    alt="Coffee stirrer Gëlbö"
-                                    class="w-full h-full object-cover"
-                                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                />
-
-                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
-                                    <div class="flex justify-between items-end">
-                                        <h4 class="text-white text-2xl font-light">Coffee Stirrer</h4>
-                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
-                                            <span class="material-icons">arrow_forward</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <!-- Kemasan Minuman -->
@@ -380,10 +378,15 @@
                 <div class="grid md:grid-cols-4 gap-8 border-t border-stone-800 pt-8">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                                <span class="text-white font-bold">G</span>
+                            <img 
+                                src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
+                                alt="PT Garuda Maju Bersama Nusantara Logo" 
+                                class="h-8 w-auto"
+                            />
+                            <div class="flex flex-col">
+                                <h5 class="font-bold text-lg text-white">PT Garuda Maju Bersama Nusantara</h5>
+                                <span class="text-sm text-stone-400">Gëlbö</span>
                             </div>
-                            <h5 class="font-bold text-lg">Gëlbö</h5>
                         </div>
                         <p class="text-stone-400 text-sm">
                             Solusi higienis dan praktis untuk kebutuhan sehari-hari keluarga Indonesia.
@@ -505,14 +508,7 @@
                 });
             });
 
-            // Add parallax effect to hero section
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                const hero = document.querySelector('section:first-of-type');
-                if (hero) {
-                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-                }
-            });
+            // Smooth hero section (parallax removed for better performance)
         </script>
     </body>
 </html>

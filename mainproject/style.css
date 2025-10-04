@@ -124,6 +124,15 @@ html {
     @apply translate-x-0;
 }
 
+/* Ensure mobile menu is hidden by default */
+#mobileMenu {
+    display: none;
+}
+
+#mobileMenu.open {
+    display: block;
+}
+
 /* Loading animation */
 .loading-spinner {
     @apply inline-block w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin;
