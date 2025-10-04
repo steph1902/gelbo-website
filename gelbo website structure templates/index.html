@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Poliform</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#A18A79",
+                            "background-light": "#FDFDFC",
+                            "background-dark": "#121212",
+                        },
+                        fontFamily: {
+                            display: ["Inter", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
+    </head>
+
+    <body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200">
+        <div class="mx-auto max-w-screen-xl">
+            <header class="flex justify-between items-center p-4 border-b border-stone-200 dark:border-stone-800">
+                <h1 class="text-xl font-bold tracking-wider">Poliform</h1>
+                <nav class="hidden md:flex items-center space-x-6 text-sm">
+                    <a class="hover:text-primary" href="#">Product</a>
+                    <a class="hover:text-primary" href="#">Lifestyle</a>
+                    <a class="hover:text-primary" href="#">News</a>
+                    <a class="hover:text-primary" href="#">Projects</a>
+                </nav>
+                <button class="md:hidden">
+                    <span class="material-icons">menu</span>
+                </button>
+            </header>
+
+            <main class="p-4 md:p-8 space-y-16">
+                <section class="relative h-[60vh] rounded-lg overflow-hidden">
+                    <img
+                        alt="Elegant living room with contemporary furniture"
+                        class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUluAt7fj22aahZhk5FL2kpX28u_NikZ9RKfj197yi0qFrPsTzF3kFNyucFrlXQPSVEjfN6NcEJRGi_xZ9AsSHIj6FSxLnprHC2fYOu79FAsAGPcmc8rDwZ17xWtyVbB95ioPw3SsFhqh4Aj_crs9OVA7YHKjNPPfxWX8LoOmSN8q7afrqVSDyJJ7C3JOs5hW-7c946JYJhfrcJjP9IGnVguD57x85HHBdsYFMQRkHTDJlUdKOxflwROIKsODe2BYaaLT0nsln4w"
+                    />
+
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-8 md:p-16">
+                        <h2 class="text-white text-6xl md:text-8xl font-light">Contemporary</h2>
+                        <p class="text-white mt-4 max-w-md">
+                            The Poliform collection is shaped by its wide variety and strives to meet the needs of a
+                            sophisticated and international audience.
+                        </p>
+                        <button class="mt-8 bg-white/20 backdrop-blur-sm text-white py-2 px-4 rounded-full text-sm hover:bg-white/30 transition">View More</button>
+                    </div>
+
+                    <div class="absolute bottom-8 right-8 w-24 h-24 border-2 border-white/50 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-white text-4xl">play_arrow</span>
+                    </div>
+                </section>
+
+                <section class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="text-primary text-sm">Furniture</span>
+                        <h3 class="text-5xl font-light">Modern Minimalist</h3>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="relative rounded-lg overflow-hidden h-64">
+                            <img
+                                alt="Minimalist living room setup"
+                                class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx7K4UQlfcag_grBB0V-7kKa3yR3RADbNpduRaqlPQ8frSH7LdjvmBHjqS6iG7Ms1H9nDR8pEYQzBF0BCxUysmfQyYq6OtImf4U7TyyyQnMJbSYGVISAD-WBg7MIOg0oPMf6biis769YWSDAL-VvookOvtyxITZHslE8rsxrV7-adwS87Q31YwiPnkNXTfWS3g7ab_4n1CWTjKhR40T2sAzmxgVGB96xfs44p4GfE_QSuBNG1JQdMBlnktwiCLNdswaiOaYymSgw"
+                            />
+                        </div>
+
+                        <div class="bg-stone-100 dark:bg-stone-800/50 p-6 rounded-lg space-y-4 flex flex-col justify-center">
+                            <span class="text-primary text-sm">Lifestyle</span>
+                            <p class="font-light text-xl">Into a gallery of elegance</p>
+                            <a class="self-start mt-auto" href="#">
+                                <span class="material-icons bg-white dark:bg-stone-900 text-stone-900 dark:text-white p-2 rounded-full">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center py-12">
+                    <div>
+                        <p class="text-5xl font-light">500+</p>
+                        <p class="text-stone-500 dark:text-stone-400 mt-2">Products</p>
+                    </div>
+
+                    <div>
+                        <p class="text-5xl font-light">20+</p>
+                        <p class="text-stone-500 dark:text-stone-400 mt-2">Projects</p>
+                    </div>
+
+                    <div>
+                        <p class="text-5xl font-light">50+</p>
+                        <p class="text-stone-500 dark:text-stone-400 mt-2">Satisfied Customers</p>
+                    </div>
+
+                    <div>
+                        <p class="text-5xl font-light">1<sup class="text-2xl">st</sup></p>
+                        <p class="text-stone-500 dark:text-stone-400 mt-2">Top In Paris</p>
+                    </div>
+                </section>
+
+                <section class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="relative rounded-lg overflow-hidden h-96">
+                        <img
+                            alt="Spacious modern living room with cream sofas"
+                            class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQB7kg0CLCsRw8s4GPyYyNTUJfV_6_Otl7hySVZQT3yP9WLY_ITTwoEVV66NZqQrltAjJUwxkq-GCflG5LWutGLLTEJrMC3tOIjzXqbxKJ3Bj1An5tFFKhW-FhIslhESiewa92zyYbdH2a3GKmvpQ_MQydmpjxDGl2tas3k8B6v1TfL9C3GG94PoH6Z0t3WpcIIYw6xIsICdpikXy2Of6lLdgslVuMV9QnhvnWsFIRrRRbXp_f2COUP3-b5wtx2hzvdX_ZPdH2pg"
+                        />
+                    </div>
+
+                    <div class="space-y-4">
+                        <span class="text-primary text-sm">Elegance - Timeless</span>
+                        <h3 class="text-5xl font-light">Modern Style Timeless Charm</h3>
+                        <p class="text-stone-500 dark:text-stone-400">
+                            Poliform's versatile and modular home furniture adapts to any home lifestyle and adds a unique
+                            and elegant touch to any space thanks to its exceptional quality and timeless charm
+                        </p>
+                        <button class="bg-stone-800 dark:bg-stone-200 text-white dark:text-black py-3 px-6 rounded-full text-sm hover:bg-stone-700 dark:hover:bg-stone-300 transition">View More</button>
+                    </div>
+                </section>
+
+                <section class="space-y-8">
+                    <div class="flex justify-between items-end">
+                        <h3 class="text-5xl font-light max-w-lg">Explore Our Proudly Collection</h3>
+                        <p class="text-stone-500 dark:text-stone-400 max-w-sm text-sm">
+                            Poliform will showcase its vision of contemporary living architecture at its stand designed by
+                            Pitsou Kedem at the Salone del Mobile.Milano 2024.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="md:col-span-1 space-y-4">
+                            <div class="relative rounded-lg overflow-hidden group">
+                                <img
+                                    alt="Mondrian style living room"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1I2qmbNPBAWn1AvQTtljrm9r-kQ9hsk-iP8Anth5GI26PdlhCyfE5tXrKhrqFf3suv7FnsHX5CMr2jav20Opl8q1-wBNH_uTyff1KtWkVJUgNEbSLWd9d2QsPTd8i4f_vLJywSAjy98ZBAbnZPyulvpUs6mP-nhiNhC9-V8j-fnUQhl67rb8_DbjUIsEHSth7gGARmBFk6jdDlvKnpGbBIBvOJj769EzBLGKwgqYsXydmY9YdO3GKYRk8rR29LHbR84eYz_ynHQ"
+                                />
+
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                    <div class="flex justify-between items-end">
+                                        <h4 class="text-white text-2xl font-light">Mondrian</h4>
+                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative rounded-lg overflow-hidden group">
+                                <img
+                                    alt="Brera style interior"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqgOMZuXk7RJB2q_GiGedVQeLApplCV57UMUCMQfdmXpB0hv_5g3DGE1yPfPClzUaUE3uSR52upsyOePeYmXHzTllWID0Z7vCs4GQvCbZvvTXFuC5iAqJQ1oSGdY6eisuvb5tbKFWQ2ythoI5QZ08Y99fAJdhgYJFD9VJq6PuQXVTYcaNSMlS1gSpClLY4-TyMrr51rHDw23N4fqIUjCy8gFFpS1Pjkav3406gNbHW8F-DhcIGCQFUrkKRWRDPtmcvr8fK9yRdPw"
+                                />
+
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                    <div class="flex justify-between items-end">
+                                        <h4 class="text-white text-2xl font-light">Brera</h4>
+                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-1 space-y-4">
+                            <div class="relative rounded-lg overflow-hidden group">
+                                <img
+                                    alt="Nirnia style kitchen"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAexdBNCN5lUtpBV9bhX1TxqrJYZU2ziuxT-RXHvqb1UWFaRnm3b1Gkn9x8Wp6AAi24PItLUPlN5uYXMkFLSYAWJ_InQPBgPXPbImuUWa7CRmJPzSpscp5c8rd0_oeBSLvPoeaFNvN6dHhnil_VTH5eha8tI0iQINefjWCWbTDHXDsxoFRF6T-PXIt_Cv10JOl2dfhNVonSq7wkFSmO9V-teW228rOvqjIOPtqn_Ml8wAP3P0_Mue47taxiX5mn9vuvUp2Yn_Kl7g"
+                                />
+
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                    <div class="flex justify-between items-end">
+                                        <h4 class="text-white text-2xl font-light">Nirnia</h4>
+                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative rounded-lg overflow-hidden group">
+                                <img
+                                    alt="Alea Pro style interior"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx55hbOpj9-lQnLGapFcDuDtBWui5Ptq1wG-JmGYOcxK6eOALT13YRpR465Y2jMB0EEqw648_DFcfZN6kMlFOmJDSnGvaE3HhKdz-50U8eHMz1hqpCE4lkzfggUzzieH4Qye5DFTF9KJTpF0jBNsj6RzO2R_RyFfY1mEl8M2CHNZVPVUQBI98GChLT6Kt2n09jms5iBBBQ6SmM6HmZN1soEI2nMt9_3eQdNhc-L2xAh3gnHXbp8mQPieCDmY6o8aySJdSl-aMejw"
+                                />
+
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                    <div class="flex justify-between items-end">
+                                        <h4 class="text-white text-2xl font-light">Alea Pro</h4>
+                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-1 space-y-4">
+                            <div class="relative rounded-lg overflow-hidden group">
+                                <img
+                                    alt="Artex style room"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA19ylzp2WzhsQhyFxgHUz3WhcXSBpSIeSZg7eWUKPx6AR3l8eh6bbOOr4KP7fA4zLoqkG5bPd7kVBKDg_PisSsIhrgwl5Fu9rYH5TtXxEyY8o9bpSB2zRqnN5Mh-BG6gGCOt1BfI5TshBeQCsJjs-riWXv9cjNdzzFHpIAIFspKge9sdrmUz3KW5jLBOgV_do_mKd6RHShfM3otTAP_KsnvPTjbTZ0VIuV57xe5dAUpT8bgzCtGjEAbHQ9eks4odrjCDOlDOFA0w"
+                                />
+
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                    <div class="flex justify-between items-end">
+                                        <h4 class="text-white text-2xl font-light">Artex</h4>
+                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative rounded-lg overflow-hidden group">
+                                <img
+                                    alt="Nirnia style living space"
+                                    class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqT-Dn3fgDD1yPd4KE40FTIpInDkAx7P40B_jcKFdsiYxaAj7DDHeYiv1iRAx0J7Pqjh_45v0M7xhfgxfsCExeoY4TLR0_3EcWT_rGDWM9rxtwGz7svG5Cp-xtxrE1AIJWHDHyG6_vfauIOrXVE5CYIWLac6hhrSH4m_ciyoZlTS4Efr0F8U0PvXrQLyZDqryy2Y3veJkeOxSoIlnFRMpdbXK8o8Ipy2ICYIG4tQAwv_WF0yXcJ9A1SdCz6rCTJUovoSEEBctncA"
+                                />
+
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+                                    <div class="flex justify-between items-end">
+                                        <h4 class="text-white text-2xl font-light">Nirnia</h4>
+                                        <a class="bg-white/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" href="#">
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-stone-900 dark:bg-black text-white rounded-lg p-8 md:p-12">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-4">
+                            <h3 class="text-5xl font-light">Engage with Us in Conversation.</h3>
+                            <p class="text-stone-400">
+                                In a global world based on communication, a brand must base its growth on solid, consistent
+                                and distinctive values. Poliform's choice has always been to link its name to that of the most
+                                effective storytellers in the industry.
+                            </p>
+                        </div>
+
+                        <div class="relative rounded-lg overflow-hidden h-64">
+                            <img
+                                alt="Modern interior with wooden furniture"
+                                class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaqeqbnhu18fMOWQPYGl6IDvvUIN7T-N51CAWWwgTed6SONo9YZN8CzIq4Riwx8XdgbDzkL7s2KC-sXJHGn0VKGrjARWJeRQWmpHJ2bXf8TzZaHOsdemO3DlGc5AoYddlIsI1l2d2hUNtC3Fc4dg0p2JBc03G-36_inUkz5JmOy8nF0nZOlB0MeW9Z9g9lPqQszxilubpKIIWZqtskqJDYb0B7ugABIMlNy79mI_Z_mC-4qTokKuYWJtM-aFljihCdmoHBQAQ4Vw"
+                            />
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="bg-stone-900 dark:bg-black text-white p-8 md:p-12">
+                <div class="grid md:grid-cols-4 gap-8 border-t border-stone-800 pt-8">
+                    <div>
+                        <h5 class="font-bold mb-4">About</h5>
+                        <ul class="space-y-2 text-sm text-stone-400">
+                            <li><a class="hover:text-white" href="#">Our story</a></li>
+                            <li><a class="hover:text-white" href="#">Sustainability</a></li>
+                            <li><a class="hover:text-white" href="#">Careers</a></li>
+                            <li><a class="hover:text-white" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-bold mb-4">Customer Service</h5>
+                        <ul class="space-y-2 text-sm text-stone-400">
+                            <li><a class="hover:text-white" href="#">Terms of service</a></li>
+                            <li><a class="hover:text-white" href="#">Return Policy</a></li>
+                            <li><a class="hover:text-white" href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="font-bold mb-4">Social Media</h5>
+                        <ul class="space-y-2 text-sm text-stone-400">
+                            <li><a class="hover:text-white" href="#">Instagram</a></li>
+                            <li><a class="hover:text-white" href="#">Facebook</a></li>
+                            <li><a class="hover:text-white" href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-end items-end">
+                        <h2 class="text-4xl font-bold tracking-wider">Poliform</h2>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# VSCode
+.vscode/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# build/dist
+dist/
+build/
+
+# Uploaded assets or large files (adjust if you want to keep)
+# assets/large/
