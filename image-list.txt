@@ -1,0 +1,56 @@
+Here is the list of images from index.html that you may want to replace, along with their recommended resolutions, keywords, and a description of the ideal image:
+
+**Logo:**
+
+*   **File:** `assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png`
+*   **Recommended Resolution:** Use a high-quality PNG with a transparent background, at least 512px wide. For best results, use an SVG file.
+*   **Recommendation:** Your company logo.
+
+**Hero Section:**
+
+*   **Current Image:** `https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80`
+*   **Recommended Resolution:** 1920x1080 pixels (16:9 aspect ratio)
+*   **Keywords:** "happy indonesian family at home", "modern asian family living room", "bright clean home lifestyle"
+*   **Recommendation:** A high-resolution photo of a happy, modern Indonesian family in a bright, clean, and minimalist living room or kitchen. The family should look genuinely happy and relaxed. The image should have a bright and airy color palette, with natural light and perhaps some touches of green (from plants) to align with your brand's primary color and eco-friendly message.
+
+**About Section:**
+
+*   **Current Image:** `https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+*   **Recommended Resolution:** 1200x800 pixels (3:2 aspect ratio)
+*   **Keywords:** "natural home products", "eco-friendly products on a clean background", "minimalist product photography"
+*   **Recommendation:** A clean, minimalist photo showcasing a few of your products arranged neatly on a wooden or white surface. The lighting should be bright and natural.
+
+**Vision & Mission Section:**
+
+*   **Current Image:** `https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80`
+*   **Recommended Resolution:** 1200x800 pixels (3:2 aspect ratio)
+*   **Keywords:** "team working together in modern office", "diverse group of professionals collaborating", "sustainable business meeting"
+*   **Recommendation:** A photo of a diverse and professional team collaborating in a modern and bright office setting. The team should look engaged and motivated, reflecting the forward-thinking nature of your company's vision and mission.
+
+**Products Section:**
+
+*   **Tisu Gëlbö:** 
+    *   **Current Image:** `https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+    *   **Recommended Resolution:** 800x600 pixels (4:3 aspect ratio)
+    *   **Keywords:** "premium tissue box", "soft facial tissues", "hygienic paper products"
+    *   **Recommendation:** A high-quality product shot of your "Tisu Gëlbö" in its packaging, placed in a clean, well-lit bathroom or living room setting.
+*   **Sedotan Gëlbö:** 
+    *   **Current Image:** `https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+    *   **Recommended Resolution:** 800x600 pixels (4:3 aspect ratio)
+*   **Keywords:** "eco-friendly straws", "biodegradable drinking straws", "paper straws in a glass"
+    *   **Recommendation:** A photo of your "Sedotan Gëlbö" in use, perhaps in a glass of juice or a smoothie, to showcase its practicality and eco-friendly nature.
+*   **Paper Cup:** 
+    *   **Current Image:** `https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+    *   **Recommended Resolution:** 800x600 pixels (4:3 aspect ratio)
+    *   **Keywords:** "disposable paper cups", "coffee paper cup", "branded paper cups"
+    *   **Recommendation:** A clean shot of your branded paper cups, perhaps stacked or with one filled with coffee or tea.
+*   **Tisu Toilet:** 
+    *   **Current Image:** `https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+    *   **Recommended Resolution:** 800x600 pixels (4:3 aspect ratio)
+    *   **Keywords:** "toilet paper roll", "soft toilet tissue", "bathroom paper products"
+    *   **Recommendation:** A product shot of your toilet tissue, perhaps with a soft, clean background to emphasize its quality.
+*   **Plastic Cup:** 
+    *   **Current Image:** `https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+    *   **Recommended Resolution:** 800x600 pixels (4:3 aspect ratio)
+    *   **Keywords:** "clear plastic cups", "disposable plastic cups", "party cups"
+    *   **Recommendation:** A photo of your plastic cups, perhaps showing their clarity and durability.
