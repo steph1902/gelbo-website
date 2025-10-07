@@ -442,3 +442,16 @@ body.mobile-menu-is-open .mobile-nav-link {
     /* Make links initially invisible so they can be animated */
     opacity: 0;
 }
+
+/* Filter Buttons */
+.filter-btn {
+    @apply px-5 py-2 text-sm font-semibold text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-full transition-all duration-300 ease-in-out;
+}
+
+.filter-btn:hover {
+    @apply bg-primary/10 text-primary shadow-md transform scale-105;
+}
+
+.filter-btn.active {
+    @apply bg-gradient-to-r from-primary to-secondary text-white border-primary shadow-lg transform scale-105;
+}

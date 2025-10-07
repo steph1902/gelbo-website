@@ -350,18 +350,6 @@
             renderProducts();
         });
 
-        // Basic style for filter buttons - can be moved to style.css
-        const style = document.createElement('style');
-        style.innerHTML = `
-            .filter-btn {
-                @apply px-4 py-2 text-sm font-semibold text-stone-700 dark:text-stone-300 bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-200;
-            }
-            .filter-btn.active {
-                @apply bg-primary text-white border-primary shadow-lg;
-            }
-        `;
-        document.head.appendChild(style);
-
     </script>
 </body>
 </html>
