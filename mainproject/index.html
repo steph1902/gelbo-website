@@ -634,7 +634,7 @@
                                 <span class="material-icons text-white mr-2">contact_phone</span>
                                 <span class="text-white text-sm font-semibold">Hubungi Kami</span>
                             </div>
-                            <h3 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+                            <h3 class="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
                                 Mari Berkolaborasi
                                 <span class="block bg-gradient-to-r from-secondary to-yellow-300 bg-clip-text text-transparent">
                                     Bersama Kami
@@ -924,8 +924,7 @@
         <script>
             // Mobile menu toggle
             function toggleMobileMenu() {
-                const mobileMenu = document.getElementById('mobileMenu');
-                mobileMenu.classList.toggle('open');
+                document.body.classList.toggle('mobile-menu-is-open');
             }
 
             // Close mobile menu when clicking outside
@@ -933,8 +932,9 @@
                 const mobileMenu = document.getElementById('mobileMenu');
                 const menuButton = event.target.closest('button[onclick="toggleMobileMenu()"]');
                 
-                if (!mobileMenu.contains(event.target) && !menuButton) {
-                    mobileMenu.classList.remove('open');
+                // Close if the body has the class and the click is outside the menu and not on the button
+                if (document.body.classList.contains('mobile-menu-is-open') && !mobileMenu.contains(event.target) && !menuButton) {
+                    document.body.classList.remove('mobile-menu-is-open');
                 }
             });
 
