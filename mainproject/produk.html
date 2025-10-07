@@ -66,39 +66,34 @@
                     <nav class="hidden lg:flex items-center space-x-1">
                         <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="index.html">
                             <span class="relative z-10">Beranda</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
                         <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="tentang-kami.html">
                             <span class="relative z-10">Tentang Kami</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
                         <a class="nav-link group relative px-4 py-2 text-sm font-medium text-primary font-semibold transition-all duration-200 rounded-lg bg-primary/10" href="produk.html">
                             <span class="relative z-10">Produk</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg"></div>
                         </a>
-                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="index.html#visi-misi">
+                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="visi-dan-misi.html">
                             <span class="relative z-10">Visi & Misi</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
-                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="index.html#kontak">
+                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="kontak.html">
                             <span class="relative z-10">Kontak</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
                     </nav>
 
                     <!-- CTA Button & Mobile Menu -->
                     <div class="flex items-center space-x-3">
-                        <button class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                        <a href="kontak.html" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
                             <span class="mr-2">Hubungi Kami</span>
                             <span class="material-icons text-sm">arrow_forward</span>
-                        </button>
+                        </a>
                         
                         <!-- Mobile Menu Button -->
                         <button class="lg:hidden relative p-2 text-stone-600 dark:text-stone-400 hover:text-primary transition-colors duration-200" onclick="toggleMobileMenu()">
                             <div class="w-6 h-6 flex flex-col justify-center space-y-1">
-                                <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
-                                <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
-                                <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                                <span class="hamburger-line block w-6 h-0.5 bg-current"></span>
+                                <span class="hamburger-line block w-6 h-0.5 bg-current"></span>
+                                <span class="hamburger-line block w-6 h-0.5 bg-current"></span>
                             </div>
                         </button>
                     </div>
@@ -106,62 +101,10 @@
             </div>
         </header>
 
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="mobile-menu">
-            <div class="p-6">
-                <div class="flex items-center justify-between mb-8">
-                    <div class="flex items-center space-x-3">
-                        <img 
-                            src="assets/Logo PT GARUDA MAJU BERSAMA NUSANTARA .png" 
-                            alt="PT Garuda Maju Bersama Nusantara Logo" 
-                            class="h-8 w-auto"
-                        />
-                        <div>
-                            <h3 class="text-lg font-bold text-white">PT Garuda Maju Bersama Nusantara</h3>
-                            <p class="text-xs text-stone-400">Gëlbö</p>
-                        </div>
-                    </div>
-                    <button onclick="toggleMobileMenu()" class="text-stone-400 hover:text-white">
-                        <span class="material-icons">close</span>
-                    </button>
-                </div>
-                
-                <nav class="space-y-4">
-                    <a class="mobile-nav-link block py-3 px-4 text-white hover:text-primary transition-colors duration-300 rounded-lg hover:bg-white/10" href="index.html">
-                        <span class="material-icons mr-3">home</span>
-                        Beranda
-                    </a>
-                    <a class="mobile-nav-link block py-3 px-4 text-white hover:text-primary transition-colors duration-300 rounded-lg hover:bg-white/10" href="tentang-kami.html">
-                        <span class="material-icons mr-3">info</span>
-                        Tentang Kami
-                    </a>
-                    <a class="mobile-nav-link block py-3 px-4 text-primary font-semibold bg-primary/20 rounded-lg" href="produk.html">
-                        <span class="material-icons mr-3">inventory</span>
-                        Produk
-                    </a>
-                    <a class="mobile-nav-link block py-3 px-4 text-white hover:text-primary transition-colors duration-300 rounded-lg hover:bg-white/10" href="index.html#visi-misi">
-                        <span class="material-icons mr-3">visibility</span>
-                        Visi & Misi
-                    </a>
-                    <a class="mobile-nav-link block py-3 px-4 text-white hover:text-primary transition-colors duration-300 rounded-lg hover:bg-white/10" href="index.html#kontak">
-                        <span class="material-icons mr-3">contact_phone</span>
-                        Kontak
-                    </a>
-                </nav>
-            </div>
-        </div>
-
         <!-- Main Content -->
         <main>
             <!-- Hero Section -->
             <section class="relative py-20 overflow-hidden bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/10">
-                <!-- Background Elements -->
-                <div class="absolute inset-0">
-                    <div class="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse"></div>
-                    <div class="absolute top-32 right-20 w-40 h-40 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                    <div class="absolute bottom-20 left-1/4 w-28 h-28 bg-accent/10 rounded-full blur-xl animate-pulse delay-2000"></div>
-                </div>
-                
                 <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div class="inline-flex items-center px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full mb-6">
                         <span class="material-icons text-primary mr-2">inventory</span>
@@ -182,71 +125,22 @@
             <!-- Products Section -->
             <section class="py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Tisu Gëlbö -->
-                        <div class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
-                            <div class="relative">
-                                <img alt="Tisu Gëlbö premium" class="w-full h-64 object-cover" src="photos/gelbo-product-photos/tisu-gelbo.jpg">
-                                <div class="absolute top-4 right-4 bg-primary/80 text-white text-xs font-bold px-3 py-1 rounded-full">BARU</div>
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-stone-900 dark:text-white mb-2">Tisu Gëlbö</h3>
-                                <p class="text-stone-600 dark:text-stone-300 mb-4">Tisu premium yang lembut, kuat, dan higienis. Terbuat dari 100% serat alami.</p>
-                                <a href="produk-detail.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                                    <span class="mr-2">Lihat Detail</span>
-                                    <span class="material-icons">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
+                    <!-- Filter Buttons -->
+                    <div id="filter-buttons" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
+                        <button class="filter-btn active" data-filter="all">Semua</button>
+                        <button class="filter-btn" data-filter="Tisu">Tisu</button>
+                        <button class="filter-btn" data-filter="Sedotan">Sedotan</button>
+                        <button class="filter-btn" data-filter="Gelas & Kemasan">Gelas & Kemasan</button>
+                        <button class="filter-btn" data-filter="Lainnya">Lainnya</button>
+                    </div>
 
-                        <!-- Sedotan Gëlbö -->
-                        <div class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
-                            <div class="relative">
-                                <img alt="Sedotan ramah lingkungan Gëlbö" class="w-full h-64 object-cover" src="photos/gelbo-product-photos/sedotan-gelbo.jpg">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-stone-900 dark:text-white mb-2">Sedotan Gëlbö</h3>
-                                <p class="text-stone-600 dark:text-stone-300 mb-4">Sedotan ramah lingkungan yang higienis dan aman untuk minuman panas atau dingin.</p>
-                                <a href="produk-detail.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                                    <span class="mr-2">Lihat Detail</span>
-                                    <span class="material-icons">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Paper Cup -->
-                        <div class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
-                            <div class="relative">
-                                <img alt="Paper cup Gëlbö" class="w-full h-64 object-cover" src="photos/gelbo-product-photos/tali-rafia-gelbo.jpg">
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-2xl font-bold text-stone-900 dark:text-white mb-2">Tali Rafia Gëlbö</h3>
-                                <p class="text-stone-600 dark:text-stone-300 mb-4">Tali rafia berkualitas tinggi yang kuat dan tahan lama, ideal untuk berbagai keperluan.</p>
-                                <a href="produk-detail.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                                    <span class="mr-2">Lihat Detail</span>
-                                    <span class="material-icons">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
+                    <!-- Product Gallery -->
+                    <div id="product-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                        <!-- Product cards will be injected here by JavaScript -->
                     </div>
                 </div>
             </section>
 
-            <!-- CTA Section -->
-            <section class="py-20 bg-gradient-to-br from-primary via-primary/90 to-primary/80">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-                        Tertarik dengan Produk Kami?
-                    </h2>
-                    <p class="text-xl text-white/90 mb-8 leading-relaxed">
-                        Hubungi kami untuk informasi lebih lanjut, permintaan sampel, atau untuk menjadi distributor.
-                    </p>
-                    <a href="index.html#kontak" class="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-2xl hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                        <span class="mr-2">Hubungi Kami</span>
-                        <span class="material-icons">arrow_forward</span>
-                    </a>
-                </div>
-            </section>
         </main>
 
         <!-- Footer -->
@@ -260,7 +154,7 @@
             
             <div class="relative w-full px-6 sm:px-8 lg:px-12 py-16">
                 <!-- Main Footer Content -->
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     <!-- Company Info -->
                     <div class="lg:col-span-1 space-y-6">
                         <div class="group">
@@ -308,11 +202,11 @@
                             Perusahaan
                         </h5>
                         <ul class="space-y-3">
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="tentang-kami.html">
-                                <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
-                                Tentang Kami
-                            </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="index.html#visi-misi">
+                        <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="tentang-kami.html">
+                            <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                            Tentang Kami
+                        </a></li>
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="visi-dan-misi.html">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Visi & Misi
                             </a></li>
@@ -320,7 +214,7 @@
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Produk
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="index.html#kontak">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="kontak.html">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Kontak
                             </a></li>
@@ -334,19 +228,19 @@
                             Produk
                         </h5>
                         <ul class="space-y-3">
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html?id=facial-tissue-500">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Tisu Gëlbö
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html?id=straw-flexible-5mm">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Sedotan Gëlbö
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html?id=paper-cup-8oz">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Kemasan Minuman
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk.html?filter=Lainnya">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Produk Lainnya
                             </a></li>
@@ -405,46 +299,57 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Floating WhatsApp Button -->
-        <div class="fixed bottom-6 right-6 z-50">
-            <a href="https://wa.me/622112345678" target="_blank" class="group relative">
-                <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-110 animate-pulse">
-                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                    </svg>
-                </div>
-                <!-- Pulse Ring -->
-                <div class="absolute inset-0 rounded-full bg-green-500 opacity-75 animate-ping"></div>
-                <!-- Tooltip -->
-                <div class="absolute bottom-full right-0 mb-2 px-3 py-1 bg-gray-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-                    Chat dengan kami
-                    <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
-                </div>
-            </a>
-        </div>
     </div>
 
+    <script src="products.js"></script>
     <script>
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('open');
-        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const gallery = document.getElementById('product-gallery');
+            const filterButtons = document.getElementById('filter-buttons');
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+            const renderProducts = (filter = 'all') => {
+                gallery.innerHTML = ''; // Clear gallery
+
+                const filteredProducts = filter === 'all' 
+                    ? products 
+                    : products.filter(p => p.category === filter);
+
+                if (filteredProducts.length === 0) {
+                    gallery.innerHTML = `<p class="text-center col-span-full">Tidak ada produk dalam kategori ini.</p>`;
+                    return;
+                }
+
+                filteredProducts.forEach((product, index) => {
+                    const card = `
+                        <a href="produk-detail.html?id=${product.id}" class="product-card-detailed group block bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden animate-fade-in-up" style="animation-delay: ${index * 50}ms;">
+                            <div class="relative">
+                                <img alt="${product.name}" class="w-full h-56 object-cover" src="${product.image}">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-stone-900 dark:text-white mb-2 truncate">${product.name}</h3>
+                                <p class="text-stone-600 dark:text-stone-300 text-sm h-10 overflow-hidden">${product.description_id.substring(0, 60)}...</p>
+                            </div>
+                        </a>
+                    `;
+                    gallery.insertAdjacentHTML('beforeend', card);
+                });
+            };
+
+            filterButtons.addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    // Update active button style
+                    filterButtons.querySelector('.active').classList.remove('active');
+                    e.target.classList.add('active');
+                    
+                    const filter = e.target.dataset.filter;
+                    renderProducts(filter);
                 }
             });
+
+            // Initial render
+            renderProducts();
         });
+
     </script>
 </body>
 </html>
