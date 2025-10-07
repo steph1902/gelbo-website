@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Produk - Tisu Gëlbö | PT Garuda Maju Bersama Nusantara</title>
-    <meta name="description" content="Detail produk Tisu Gëlbö, tisu premium yang lembut, kuat, dan higienis.">
+    <title>Detail Produk | PT Garuda Maju Bersama Nusantara</title>
+    <meta name="description" content="Detail produk-produk berkualitas dari Gëlbö.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -66,39 +66,34 @@
                     <nav class="hidden lg:flex items-center space-x-1">
                         <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="index.html">
                             <span class="relative z-10">Beranda</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
                         <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="tentang-kami.html">
                             <span class="relative z-10">Tentang Kami</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
                         <a class="nav-link group relative px-4 py-2 text-sm font-medium text-primary font-semibold transition-all duration-200 rounded-lg bg-primary/10" href="produk.html">
                             <span class="relative z-10">Produk</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg"></div>
                         </a>
-                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="index.html#visi-misi">
+                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="visi-dan-misi.html">
                             <span class="relative z-10">Visi & Misi</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
-                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="index.html#kontak">
+                        <a class="nav-link group relative px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:text-primary transition-all duration-200 rounded-lg hover:bg-stone-50 dark:hover:bg-stone-800" href="kontak.html">
                             <span class="relative z-10">Kontak</span>
-                            <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
                         </a>
                     </nav>
 
                     <!-- CTA Button & Mobile Menu -->
                     <div class="flex items-center space-x-3">
-                        <button class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+                        <a href="kontak.html" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
                             <span class="mr-2">Hubungi Kami</span>
                             <span class="material-icons text-sm">arrow_forward</span>
-                        </button>
+                        </a>
                         
                         <!-- Mobile Menu Button -->
                         <button class="lg:hidden relative p-2 text-stone-600 dark:text-stone-400 hover:text-primary transition-colors duration-200" onclick="toggleMobileMenu()">
                             <div class="w-6 h-6 flex flex-col justify-center space-y-1">
-                                <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
-                                <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
-                                <span class="hamburger-line block w-6 h-0.5 bg-current transition-all duration-300"></span>
+                                <span class="hamburger-line block w-6 h-0.5 bg-current"></span>
+                                <span class="hamburger-line block w-6 h-0.5 bg-current"></span>
+                                <span class="hamburger-line block w-6 h-0.5 bg-current"></span>
                             </div>
                         </button>
                     </div>
@@ -110,57 +105,8 @@
         <main>
             <!-- Product Detail Section -->
             <section class="py-20">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="grid lg:grid-cols-2 gap-12 items-start">
-                        <!-- Product Image -->
-                        <div class="relative">
-                            <img src="photos/gelbo-product-photos/tisu-gelbo.jpg" alt="Tisu Gëlbö" class="w-full h-auto rounded-2xl shadow-2xl object-cover">
-                            <div class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl animate-bounce">
-                                <span class="material-icons text-white text-2xl">star</span>
-                            </div>
-                        </div>
-
-                        <!-- Product Info -->
-                        <div class="space-y-8">
-                            <div>
-                                <a href="produk.html" class="inline-flex items-center text-primary hover:underline mb-4">
-                                    <span class="material-icons mr-2">arrow_back</span>
-                                    Kembali ke Produk
-                                </a>
-                                <h1 class="text-4xl md:text-5xl font-bold text-stone-900 dark:text-white mb-4">Tisu Gëlbö</h1>
-                                <p class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed">
-                                    Tisu Gëlbö adalah pilihan terbaik untuk keluarga Anda. Dibuat dari 100% serat alami pilihan, tisu ini menawarkan kelembutan dan kekuatan maksimal. Sangat higienis dan aman untuk semua jenis kulit, termasuk kulit sensitif.
-                                </p>
-                            </div>
-
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl">
-                                    <h4 class="text-lg font-bold text-stone-900 dark:text-white mb-2">Spesifikasi</h4>
-                                    <ul class="space-y-2 text-stone-600 dark:text-stone-300">
-                                        <li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>100% Serat Alami</li>
-                                        <li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>2 Lapis</li>
-                                        <li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>Isi 250 Lembar</li>
-                                        <li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>Hipoalergenik</li>
-                                    </ul>
-                                </div>
-                                <div class="p-6 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-2xl">
-                                    <h4 class="text-lg font-bold text-stone-900 dark:text-white mb-2">Keunggulan</h4>
-                                    <ul class="space-y-2 text-stone-600 dark:text-stone-300">
-                                        <li class="flex items-center"><span class="material-icons text-secondary mr-2">star</span>Sangat Lembut</li>
-                                        <li class="flex items-center"><span class="material-icons text-secondary mr-2">star</span>Daya Serap Tinggi</li>
-                                        <li class="flex items-center"><span class="material-icons text-secondary mr-2">star</span>Ramah Lingkungan</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="pt-8">
-                                <a href="index.html#kontak" class="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-2xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                                    <span class="mr-2">Minta Penawaran</span>
-                                    <span class="material-icons">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div id="product-detail-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Dynamic content will be injected here -->
                 </div>
             </section>
 
@@ -170,31 +116,8 @@
                     <div class="text-center mb-12">
                         <h2 class="text-3xl md:text-4xl font-bold text-stone-900 dark:text-white">Produk Lainnya</h2>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <!-- Sedotan Gëlbö -->
-                        <a href="#" class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
-                            <img alt="Sedotan ramah lingkungan Gëlbö" class="w-full h-56 object-cover" src="photos/gelbo-product-photos/sedotan-gelbo.jpg">
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Sedotan Gëlbö</h3>
-                                <p class="text-stone-600 dark:text-stone-300 text-sm">Sedotan ramah lingkungan yang higienis.</p>
-                            </div>
-                        </a>
-                        <!-- Paper Cup -->
-                        <a href="#" class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
-                            <img alt="Paper cup Gëlbö" class="w-full h-56 object-cover" src="photos/gelbo-product-photos/tali-rafia-gelbo.jpg">
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Tali Rafia Gëlbö</h3>
-                                <p class="text-stone-600 dark:text-stone-300 text-sm">Guna untuk mengikat dan membungkus.</p>
-                            </div>
-                        </a>
-                        <!-- Tisu Toilet -->
-                        <a href="#" class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
-                            <img alt="Tisu toilet Gëlbö" class="w-full h-56 object-cover" src="photos/gelbo-product-photos/sedotan-gelbo.jpg">
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Sedotan Gëlbö</h3>
-                                <p class="text-stone-600 dark:text-stone-300 text-sm">Sedotan ramah lingkungan yang higienis.</p>
-                            </div>
-                        </a>
+                    <div id="other-products-gallery" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Other products will be injected here -->
                     </div>
                 </div>
             </section>
@@ -211,7 +134,7 @@
             
             <div class="relative w-full px-6 sm:px-8 lg:px-12 py-16">
                 <!-- Main Footer Content -->
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     <!-- Company Info -->
                     <div class="lg:col-span-1 space-y-6">
                         <div class="group">
@@ -259,10 +182,10 @@
                             Perusahaan
                         </h5>
                         <ul class="space-y-3">
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="tentang-kami.html">
-                                <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
-                                Tentang Kami
-                            </a></li>
+                        <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="tentang-kami.html">
+                            <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                            Tentang Kami
+                        </a></li>
                             <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="visi-dan-misi.html">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Visi & Misi
@@ -285,19 +208,19 @@
                             Produk
                         </h5>
                         <ul class="space-y-3">
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html?id=facial-tissue-500">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Tisu Gëlbö
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html?id=straw-flexible-5mm">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Sedotan Gëlbö
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk-detail.html?id=paper-cup-8oz">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Kemasan Minuman
                             </a></li>
-                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="#">
+                            <li><a class="footer-link group flex items-center text-stone-300 hover:text-white transition-all duration-300" href="produk.html?filter=Lainnya">
                                 <span class="material-icons text-sm mr-2 group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
                                 Produk Lainnya
                             </a></li>
@@ -358,12 +281,83 @@
         </footer>
     </div>
 
+    <script src="products.js"></script>
     <script>
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('open');
-        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const productDetailContainer = document.getElementById('product-detail-container');
+            const otherProductsGallery = document.getElementById('other-products-gallery');
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            const product = products.find(p => p.id === productId);
+
+            if (product) {
+                // Update page title
+                document.title = `${product.name} | PT Garuda Maju Bersama Nusantara`;
+
+                // Populate product detail
+                const detailHTML = `
+                    <div class="grid lg:grid-cols-2 gap-12 items-start">
+                        <!-- Product Image -->
+                        <div class="relative">
+                            <img id="product-image" src="${product.image}" alt="${product.name}" class="w-full h-auto rounded-2xl shadow-2xl object-cover">
+                            <div class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl animate-bounce">
+                                <span class="material-icons text-white text-2xl">star</span>
+                            </div>
+                        </div>
+
+                        <!-- Product Info -->
+                        <div class="space-y-8">
+                            <div>
+                                <a href="produk.html" class="inline-flex items-center text-primary hover:underline mb-4">
+                                    <span class="material-icons mr-2">arrow_back</span>
+                                    Kembali ke Produk
+                                </a>
+                                <h1 id="product-name" class="text-4xl md:text-5xl font-bold text-stone-900 dark:text-white mb-4">${product.name}</h1>
+                                <p id="product-description" class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed">
+                                    ${product.description_id}
+                                </p>
+                            </div>
+
+                            <div class="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl">
+                                <h4 class="text-lg font-bold text-stone-900 dark:text-white mb-2">Spesifikasi</h4>
+                                <ul id="product-specs" class="space-y-2 text-stone-600 dark:text-stone-300">
+                                    ${product.specs.map(spec => `<li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>${spec}</li>`).join('')}
+                                </ul>
+                            </div>
+
+                            <div class="pt-8">
+                                <a href="kontak.html" class="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-2xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                    <span class="mr-2">Minta Penawaran</span>
+                                    <span class="material-icons">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productDetailContainer.innerHTML = detailHTML;
+
+                // Populate other products
+                const otherProducts = products.filter(p => p.id !== productId).slice(0, 3); // Show 3 other products
+                otherProducts.forEach(other => {
+                    const card = `
+                        <a href="produk-detail.html?id=${other.id}" class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
+                            <img alt="${other.name}" class="w-full h-56 object-cover" src="${other.image}">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-2 truncate">${other.name}</h3>
+                                <p class="text-stone-600 dark:text-stone-300 text-sm h-10 overflow-hidden">${other.description_id.substring(0, 60)}...</p>
+                            </div>
+                        </a>
+                    `;
+                    otherProductsGallery.insertAdjacentHTML('beforeend', card);
+                });
+
+            } else {
+                productDetailContainer.innerHTML = '<p class="text-center text-xl">Produk tidak ditemukan. <a href="produk.html" class="text-primary underline">Kembali ke galeri</a>.</p>';
+                document.getElementById('other-products-gallery').style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
