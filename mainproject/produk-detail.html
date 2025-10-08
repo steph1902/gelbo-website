@@ -282,82 +282,119 @@
     </div>
 
     <script src="products.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const productDetailContainer = document.getElementById('product-detail-container');
-            const otherProductsGallery = document.getElementById('other-products-gallery');
-
-            const urlParams = new URLSearchParams(window.location.search);
-            const productId = urlParams.get('id');
-
-            const product = products.find(p => p.id === productId);
-
-            if (product) {
-                // Update page title
-                document.title = `${product.name} | PT Garuda Maju Bersama Nusantara`;
-
-                // Populate product detail
-                const detailHTML = `
-                    <div class="grid lg:grid-cols-2 gap-12 items-start">
-                        <!-- Product Image -->
-                        <div class="relative">
-                            <img id="product-image" src="${product.image}" alt="${product.name}" class="w-full h-auto rounded-2xl shadow-2xl object-cover">
-                            <div class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl animate-bounce">
-                                <span class="material-icons text-white text-2xl">star</span>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const productDetailContainer = document.getElementById('product-detail-container');
+                    const otherProductsGallery = document.getElementById('other-products-gallery');
+    
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const productId = urlParams.get('id');
+    
+                    const product = products.find(p => p.id === productId);
+    
+                    if (product) {
+                        // Update page title
+                        document.title = `${product.name} | PT Garuda Maju Bersama Nusantara`;
+    
+                        // Function to generate specs HTML
+                        const generateSpecsHTML = (specs) => {
+                            return specs.map(spec => `<li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>${spec}</li>`).join('');
+                        };
+    
+                        // Initial variant
+                        let selectedVariant = product.variants[0];
+    
+                        // Populate product detail
+                        const detailHTML = `
+                            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                                <!-- Product Image -->
+                                <div class="relative">
+                                    <img id="product-image" src="${product.image}" alt="${product.name}" class="w-full h-auto rounded-2xl shadow-2xl object-cover">
+                                    <div class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl animate-bounce">
+                                        <span class="material-icons text-white text-2xl">star</span>
+                                    </div>
+                                </div>
+    
+                                <!-- Product Info -->
+                                <div class="space-y-8">
+                                    <div>
+                                        <a href="produk.html" class="inline-flex items-center text-primary hover:underline mb-4">
+                                            <span class="material-icons mr-2">arrow_back</span>
+                                            Kembali ke Produk
+                                        </a>
+                                        <h1 id="product-name" class="text-4xl md:text-5xl font-bold text-stone-900 dark:text-white mb-4">${product.name}</h1>
+                                        <p id="product-description" class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed">
+                                            ${product.description_id}
+                                        </p>
+                                    </div>
+    
+                                    <!-- Variant Selection -->
+                                    <div>
+                                        <h4 class="text-lg font-bold text-stone-900 dark:text-white mb-4">Pilih Varian:</h4>
+                                        <div id="variant-buttons" class="flex flex-wrap gap-4">
+                                            ${product.variants.map((variant, index) => `
+                                                <button class="variant-btn ${index === 0 ? 'active' : ''}" data-variant-id="${variant.id}">
+                                                    ${variant.name}
+                                                </button>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+    
+                                    <div class="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl">
+                                        <h4 class="text-lg font-bold text-stone-900 dark:text-white mb-2">Spesifikasi</h4>
+                                        <ul id="product-specs" class="space-y-2 text-stone-600 dark:text-stone-300">
+                                            ${generateSpecsHTML(selectedVariant.specs)}
+                                        </ul>
+                                    </div>
+    
+                                    <div class="pt-8">
+                                        <a href="kontak.html" class="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-2xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <span class="mr-2">Minta Penawaran</span>
+                                            <span class="material-icons">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Product Info -->
-                        <div class="space-y-8">
-                            <div>
-                                <a href="produk.html" class="inline-flex items-center text-primary hover:underline mb-4">
-                                    <span class="material-icons mr-2">arrow_back</span>
-                                    Kembali ke Produk
+                        `;
+                        productDetailContainer.innerHTML = detailHTML;
+    
+                        const variantButtons = document.getElementById('variant-buttons');
+                        const productSpecs = document.getElementById('product-specs');
+    
+                        variantButtons.addEventListener('click', (e) => {
+                            if (e.target.classList.contains('variant-btn')) {
+                                // Update active button style
+                                variantButtons.querySelector('.active').classList.remove('active');
+                                e.target.classList.add('active');
+    
+                                const variantId = e.target.dataset.variantId;
+                                selectedVariant = product.variants.find(v => v.id === variantId);
+                                
+                                if (selectedVariant) {
+                                    productSpecs.innerHTML = generateSpecsHTML(selectedVariant.specs);
+                                }
+                            }
+                        });
+    
+                        // Populate other products
+                        const otherProducts = products.filter(p => p.id !== productId).slice(0, 3); // Show 3 other products
+                        otherProducts.forEach(other => {
+                            const card = `
+                                <a href="produk-detail.html?id=${other.id}" class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
+                                    <img alt="${other.name}" class="w-full h-56 object-cover" src="${other.image}">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-2 truncate">${other.name}</h3>
+                                        <p class="text-stone-600 dark:text-stone-300 text-sm h-10 overflow-hidden">${other.description_id.substring(0, 60)}...</p>
+                                    </div>
                                 </a>
-                                <h1 id="product-name" class="text-4xl md:text-5xl font-bold text-stone-900 dark:text-white mb-4">${product.name}</h1>
-                                <p id="product-description" class="text-xl text-stone-600 dark:text-stone-300 leading-relaxed">
-                                    ${product.description_id}
-                                </p>
-                            </div>
-
-                            <div class="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl">
-                                <h4 class="text-lg font-bold text-stone-900 dark:text-white mb-2">Spesifikasi</h4>
-                                <ul id="product-specs" class="space-y-2 text-stone-600 dark:text-stone-300">
-                                    ${product.specs.map(spec => `<li class="flex items-center"><span class="material-icons text-primary mr-2">check</span>${spec}</li>`).join('')}
-                                </ul>
-                            </div>
-
-                            <div class="pt-8">
-                                <a href="kontak.html" class="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-2xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                                    <span class="mr-2">Minta Penawaran</span>
-                                    <span class="material-icons">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                productDetailContainer.innerHTML = detailHTML;
-
-                // Populate other products
-                const otherProducts = products.filter(p => p.id !== productId).slice(0, 3); // Show 3 other products
-                otherProducts.forEach(other => {
-                    const card = `
-                        <a href="produk-detail.html?id=${other.id}" class="product-card-detailed group relative bg-white dark:bg-stone-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
-                            <img alt="${other.name}" class="w-full h-56 object-cover" src="${other.image}">
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold text-stone-900 dark:text-white mb-2 truncate">${other.name}</h3>
-                                <p class="text-stone-600 dark:text-stone-300 text-sm h-10 overflow-hidden">${other.description_id.substring(0, 60)}...</p>
-                            </div>
-                        </a>
-                    `;
-                    otherProductsGallery.insertAdjacentHTML('beforeend', card);
+                            `;
+                            otherProductsGallery.insertAdjacentHTML('beforeend', card);
+                        });
+    
+                    } else {
+                        productDetailContainer.innerHTML = '<p class="text-center text-xl">Produk tidak ditemukan. <a href="produk.html" class="text-primary underline">Kembali ke galeri</a>.</p>';
+                        document.getElementById('other-products-gallery').style.display = 'none';
+                    }
                 });
-
-            } else {
-                productDetailContainer.innerHTML = '<p class="text-center text-xl">Produk tidak ditemukan. <a href="produk.html" class="text-primary underline">Kembali ke galeri</a>.</p>';
-                document.getElementById('other-products-gallery').style.display = 'none';
-            }
-        });
-    </script>
-</body>
+            </script></body>
 </html>
